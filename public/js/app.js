@@ -8492,52 +8492,58 @@ var App = function (_Component) {
                 'div',
                 null,
                 _react2.default.createElement(
-                    'nav',
-                    { className: 'navbar navbar-default' },
+                    'div',
+                    { className: 'container-fluid' },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'container-fluid' },
+                        'nav',
+                        { className: 'navbar navbar-light bg-faded' },
                         _react2.default.createElement(
-                            'div',
-                            { className: 'navbar-header' },
-                            _react2.default.createElement(
-                                'a',
-                                { className: 'navbar-brand', href: '#' },
-                                'Scotch Cars'
-                            )
+                            'a',
+                            { className: 'navbar-brand', href: '#' },
+                            'CJ Sampson\'s Portfolio'
                         ),
                         _react2.default.createElement(
-                            'div',
-                            { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' },
+                            'ul',
+                            { className: 'nav navbar-nav' },
                             _react2.default.createElement(
-                                'ul',
-                                { className: 'nav navbar-nav' },
+                                'li',
+                                { className: 'nav-item active' },
                                 _react2.default.createElement(
-                                    'li',
-                                    null,
+                                    _reactRouter.Link,
+                                    { className: 'nav-link', to: '/' },
+                                    'Home ',
                                     _react2.default.createElement(
-                                        _reactRouter.Link,
-                                        { to: '/' },
-                                        'Home'
+                                        'span',
+                                        { className: 'sr-only' },
+                                        '(current)'
                                     )
-                                ),
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'nav-item' },
                                 _react2.default.createElement(
-                                    'li',
-                                    null,
-                                    _react2.default.createElement(
-                                        _reactRouter.Link,
-                                        { to: '/cars' },
-                                        'Cars'
-                                    )
-                                ),
+                                    _reactRouter.Link,
+                                    { className: 'nav-link', to: 'about' },
+                                    'About'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'nav-item' },
                                 _react2.default.createElement(
-                                    'li',
-                                    null,
-                                    _react2.default.createElement(
-                                        _reactRouter.Link,
-                                        { to: '/about' },
-                                        'About'
-                                    )
+                                    _reactRouter.Link,
+                                    { className: 'nav-link', to: 'portfolio' },
+                                    'Portfolio'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'li',
+                                { className: 'nav-item' },
+                                _react2.default.createElement(
+                                    _reactRouter.Link,
+                                    { className: 'nav-link', to: 'contact' },
+                                    'Contact'
                                 )
                             )
                         )
@@ -8598,7 +8604,11 @@ var Blog = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                'Blog'
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Lorem ipsum text goes here for right now... Lorem ipsum text goes here for right now... Lorem ipsum text goes here for right now Lorem ipsum text goes here for right now... Lorem ipsum text goes here for right now... Lorem ipsum text goes here for right now Lorem ipsum text goes here for right now... Lorem ipsum text goes here for right now... Lorem ipsum text goes here for right now'
+                )
             );
         }
     }]);

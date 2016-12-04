@@ -7,20 +7,26 @@ class App extends Component {
     render(){
         return(
             <div>
-                <nav className="navbar navbar-default">
-                    <div className="container-fluid">
-                        <div className="navbar-header">
-                            <a className="navbar-brand" href="#">Scotch Cars</a>
-                        </div>
-                        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul className="nav navbar-nav">
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/cars">Cars</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <div className="container-fluid">
+                    <nav className="navbar navbar-light bg-faded">                        
+                        <a className="navbar-brand" href="#">CJ Sampson's Portfolio</a>
+                        <ul className="nav navbar-nav">
+                            <li className="nav-item active">
+                                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="about">About</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="portfolio">Portfolio</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="contact">Contact</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
                 <div className="container">
                     {this.props.children}
                 </div>
