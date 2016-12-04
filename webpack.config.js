@@ -5,9 +5,9 @@ const combineLoaders = require('webpack-combine-loaders');
 
 module.exports = {
    devtool: 'source-map',
-   entry: './resources/assets/js/components/Main.jsx',
+   entry: './resources/assets/js/src/index.js',
    output: {
-       filename: './public/js/main.js',
+       filename: './public/js/app.js',
    },
    plugins: [
        new ExtractTextPlugin('styles-[hash].css'),
