@@ -7,59 +7,142 @@ export default class Portfolio extends Component {
         return (
             <div className="columns">
                 <div className="column is-three-quarters">
+
                     <div className="box">
                         <article className="media">
-                            <div className="media-left">
-                                <figure className="image-container">
-                                    <img src="/images/bl.png" alt="Image" />
-                                </figure>
-                            </div>
-                            <div className="media-content">
-                                <div className="content">
-                                    <p className="project-description"><strong>Blueline Screening Source</strong> is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.</p>
-                                    <div className="project-technologies">
-                                        <p><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, Sequel Pro, NPM, Gulp, Vagrant</p>
+
+                            <div className="columns">
+
+                                <div className="column is-5 is-flex image-column">
+                                    <div className="media-left is-flex">
+                                        <figure className="image-container">
+                                            <img src="/images/bl.png" alt="Image" />
+                                        </figure>
                                     </div>
-                                </div>                  
+                                </div>
+
+                                <div className="column is-7">
+                                    <div className="media-content is-flex media-flex">
+                                        <div className="content is-flex">
+                                            <p className="project-description">
+                                                <strong>Blueline Screening Source</strong> is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.
+                                            </p>
+                                            <div className="project-technologies">
+                                                <p><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, Sequel Pro, NPM, Gulp, Vagrant</p>
+                                                <a href="#" className="is-flex github-container">
+                                                    <i className="fa fa-github" aria-hidden="true"></i>
+                                                    <span className="github-span">Private Repo</span>
+                                                </a>
+                                            </div>
+                                        </div>                  
+                                    </div>
+                                </div>
                             </div>
                         </article>
                     </div>
 
                     <div className="box">
                         <article className="media">
-                            <div className="media-left">
-                                <figure className="image-container">
-                                    <img src="/images/tandc.png" alt="Image" />
-                                </figure>
-                            </div>
-                            <div className="media-content">
-                                <div className="content">
-                                    <p className="project-description"><strong>TandC</strong> is an application that has all sorts of resources from videos to articles all co-created by yours truely.  TandC uses Laravel for the backend while utilizing the Bulma CSS framework for layout/templating, jQuery for DOM maniputaion and user interaction, and many more open-source libraries.</p>
+
+                            <div className="columns">
+
+                                <div className="column is-5 is-flex image-column">
+                                    <div className="media-left is-flex">
+                                        <figure className="image-container">
+                                            <img src="/images/tandc.png" alt="Image" />
+                                        </figure>
+                                    </div>
                                 </div>
-                                <div className="technologies-used">
-                                    <p className="project-technologies"><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, AJAX, Datatables, Bulma Framework, NPM, Gulp, Homestead</p>
-                                </div>                  
+
+                                <div className="column is-7">
+                                    <div className="media-content is-flex media-flex">
+                                        <div className="content is-flex">
+                                            <p className="project-description">
+                                                <strong>TandC</strong> is an application that has all sorts of resources from videos to articles all co-created by yours truely.  TandC uses Laravel for the backend while utilizing the Bulma CSS framework for layout/templating, jQuery for DOM maniputaion and user interaction, and many more open-source libraries.
+                                            </p>
+
+                                            <div className="project-technologies">
+                                                <p><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, AJAX, Datatables, Bulma Framework, NPM, Gulp, Homestead</p>
+                                                <a href="#" className="is-flex github-container">
+                                                    <i className="fa fa-github" aria-hidden="true"></i>
+                                                    <span className="github-span">Private Repo</span>
+                                                </a>
+                                            </div>
+                                        </div>                  
+                                    </div>
+                                </div>
                             </div>
                         </article>
                     </div>
 
                     <div className="box">
                         <article className="media">
-                            <div className="media-left">
-                                <figure className="image-container">
-                                    <img src="/images/tandc.png" alt="Image" />
-                                </figure>
-                            </div>
-                            <div className="media-content">
-                                <div className="content">
-                                    <p className="project-description"><strong>Sweet Yams</strong> was a project that I was a part of for a local, organic restaurant.  The application had a CRUD build for the restaurant owners to update the menu.  Another big feature built for the application was the menu and ordering system.</p>
+
+                            <div className="columns">
+
+                                <div className="column is-5 is-flex image-column">
+                                    <div className="media-left is-flex">
+                                        <figure className="image-container">
+                                            <img src="/images/sweetyams.png" alt="Image" />
+                                        </figure>
+                                    </div>
                                 </div>
-                                <div className="technologies-used">
-                                    <p className="project-technologies"><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, Custom Flexbox, Vue.js, NPM, Gulp, Bower, Browsersync</p>
-                                </div>                  
+
+                                <div className="column is-7">
+                                    <div className="media-content is-flex media-flex">
+                                        <div className="content is-flex">
+                                            <p className="project-description">
+                                                <strong>Sweet Yams</strong> was a project that I was a part of for a local, organic restaurant.  The application had a CRUD build for the restaurant owners to update the menu.  Another big feature built for the application was the menu and ordering system.
+                                            </p>
+                                            
+                                            <div className="project-technologies">
+                                                <p><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, Custom Flexbox, Vue.js, NPM, Gulp, Bower, Browsersync</p>
+                                                <a href="https://github.com/thesweetyams/sweetyams" className="is-flex github-container">
+                                                    <i className="fa fa-github" aria-hidden="true"></i>
+                                                    <span className="github-span">Github</span>
+                                                </a>
+                                            </div>
+                                        </div>                  
+                                    </div>
+                                </div>
                             </div>
                         </article>
-                    </div>                    
+                    </div>
+
+                    <div className="box">
+                        <article className="media">
+
+                            <div className="columns">
+
+                                <div className="column is-5 is-flex image-column">
+                                    <div className="media-left is-flex">
+                                        <figure className="image-container">
+                                            <img src="/images/wackamole.png" alt="Image" />
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <div className="column is-7">
+                                    <div className="media-content is-flex media-flex">
+                                        <div className="content is-flex">
+                                            <p className="project-description">
+                                                <strong>Whack-a-mole</strong> is a fun jQuery focused JavaScript game that has a basic score counter and random images that pop up on click.
+                                            </p>
+                                            
+                                            <div className="project-technologies">
+                                                <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, jQuery</p>
+                                                <a href="https://github.com/cjsampson/Whack-a-Mole" className="is-flex github-container">
+                                                    <i className="fa fa-github" aria-hidden="true"></i>
+                                                    <span className="github-span">Github</span>
+                                                </a>
+                                            </div>
+                                        </div>                  
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
                 </div>
             </div>
         )

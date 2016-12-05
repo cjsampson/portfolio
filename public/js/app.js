@@ -27022,41 +27022,63 @@ var Portfolio = function (_Component) {
                             { className: 'media' },
                             _react2.default.createElement(
                                 'div',
-                                { className: 'media-left' },
-                                _react2.default.createElement(
-                                    'figure',
-                                    { className: 'image-container' },
-                                    _react2.default.createElement('img', { src: '/images/bl.png', alt: 'Image' })
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'media-content' },
+                                { className: 'columns' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'content' },
-                                    _react2.default.createElement(
-                                        'p',
-                                        { className: 'project-description' },
-                                        _react2.default.createElement(
-                                            'strong',
-                                            null,
-                                            'Blueline Screening Source'
-                                        ),
-                                        ' is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.'
-                                    ),
+                                    { className: 'column is-5 is-flex image-column' },
                                     _react2.default.createElement(
                                         'div',
-                                        { className: 'project-technologies' },
+                                        { className: 'media-left is-flex' },
                                         _react2.default.createElement(
-                                            'p',
-                                            null,
+                                            'figure',
+                                            { className: 'image-container' },
+                                            _react2.default.createElement('img', { src: '/images/bl.png', alt: 'Image' })
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'column is-7' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'media-content is-flex media-flex' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'content is-flex' },
                                             _react2.default.createElement(
-                                                'strong',
-                                                null,
-                                                'Technologies used:'
+                                                'p',
+                                                { className: 'project-description' },
+                                                _react2.default.createElement(
+                                                    'strong',
+                                                    null,
+                                                    'Blueline Screening Source'
+                                                ),
+                                                ' is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.'
                                             ),
-                                            ' Laravel Framework, Twitter Bootstrap, jQuery, Sequel Pro, NPM, Gulp, Vagrant'
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'project-technologies' },
+                                                _react2.default.createElement(
+                                                    'p',
+                                                    null,
+                                                    _react2.default.createElement(
+                                                        'strong',
+                                                        null,
+                                                        'Technologies used:'
+                                                    ),
+                                                    ' Laravel Framework, Twitter Bootstrap, jQuery, Sequel Pro, NPM, Gulp, Vagrant'
+                                                ),
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: '#', className: 'is-flex github-container' },
+                                                    _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'github-span' },
+                                                        'Private Repo'
+                                                    )
+                                                )
+                                            )
                                         )
                                     )
                                 )
@@ -27071,42 +27093,64 @@ var Portfolio = function (_Component) {
                             { className: 'media' },
                             _react2.default.createElement(
                                 'div',
-                                { className: 'media-left' },
-                                _react2.default.createElement(
-                                    'figure',
-                                    { className: 'image-container' },
-                                    _react2.default.createElement('img', { src: '/images/tandc.png', alt: 'Image' })
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'media-content' },
+                                { className: 'columns' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'content' },
+                                    { className: 'column is-5 is-flex image-column' },
                                     _react2.default.createElement(
-                                        'p',
-                                        { className: 'project-description' },
+                                        'div',
+                                        { className: 'media-left is-flex' },
                                         _react2.default.createElement(
-                                            'strong',
-                                            null,
-                                            'TandC'
-                                        ),
-                                        ' is an application that has all sorts of resources from videos to articles all co-created by yours truely.  TandC uses Laravel for the backend while utilizing the Bulma CSS framework for layout/templating, jQuery for DOM maniputaion and user interaction, and many more open-source libraries.'
+                                            'figure',
+                                            { className: 'image-container' },
+                                            _react2.default.createElement('img', { src: '/images/tandc.png', alt: 'Image' })
+                                        )
                                     )
                                 ),
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'technologies-used' },
+                                    { className: 'column is-7' },
                                     _react2.default.createElement(
-                                        'p',
-                                        { className: 'project-technologies' },
+                                        'div',
+                                        { className: 'media-content is-flex media-flex' },
                                         _react2.default.createElement(
-                                            'strong',
-                                            null,
-                                            'Technologies used:'
-                                        ),
-                                        ' Laravel Framework, Twitter Bootstrap, jQuery, AJAX, Datatables, Bulma Framework, NPM, Gulp, Homestead'
+                                            'div',
+                                            { className: 'content is-flex' },
+                                            _react2.default.createElement(
+                                                'p',
+                                                { className: 'project-description' },
+                                                _react2.default.createElement(
+                                                    'strong',
+                                                    null,
+                                                    'TandC'
+                                                ),
+                                                ' is an application that has all sorts of resources from videos to articles all co-created by yours truely.  TandC uses Laravel for the backend while utilizing the Bulma CSS framework for layout/templating, jQuery for DOM maniputaion and user interaction, and many more open-source libraries.'
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'project-technologies' },
+                                                _react2.default.createElement(
+                                                    'p',
+                                                    null,
+                                                    _react2.default.createElement(
+                                                        'strong',
+                                                        null,
+                                                        'Technologies used:'
+                                                    ),
+                                                    ' Laravel Framework, Twitter Bootstrap, jQuery, AJAX, Datatables, Bulma Framework, NPM, Gulp, Homestead'
+                                                ),
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: '#', className: 'is-flex github-container' },
+                                                    _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'github-span' },
+                                                        'Private Repo'
+                                                    )
+                                                )
+                                            )
+                                        )
                                     )
                                 )
                             )
@@ -27120,42 +27164,135 @@ var Portfolio = function (_Component) {
                             { className: 'media' },
                             _react2.default.createElement(
                                 'div',
-                                { className: 'media-left' },
-                                _react2.default.createElement(
-                                    'figure',
-                                    { className: 'image-container' },
-                                    _react2.default.createElement('img', { src: '/images/tandc.png', alt: 'Image' })
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'media-content' },
+                                { className: 'columns' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'content' },
+                                    { className: 'column is-5 is-flex image-column' },
                                     _react2.default.createElement(
-                                        'p',
-                                        { className: 'project-description' },
+                                        'div',
+                                        { className: 'media-left is-flex' },
                                         _react2.default.createElement(
-                                            'strong',
-                                            null,
-                                            'Sweet Yams'
-                                        ),
-                                        ' was a project that I was a part of for a local, organic restaurant.  The application had a CRUD build for the restaurant owners to update the menu.  Another big feature built for the application was the menu and ordering system.'
+                                            'figure',
+                                            { className: 'image-container' },
+                                            _react2.default.createElement('img', { src: '/images/sweetyams.png', alt: 'Image' })
+                                        )
                                     )
                                 ),
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'technologies-used' },
+                                    { className: 'column is-7' },
                                     _react2.default.createElement(
-                                        'p',
-                                        { className: 'project-technologies' },
+                                        'div',
+                                        { className: 'media-content is-flex media-flex' },
                                         _react2.default.createElement(
-                                            'strong',
-                                            null,
-                                            'Technologies used:'
-                                        ),
-                                        ' Laravel Framework, Twitter Bootstrap, jQuery, Custom Flexbox, Vue.js, NPM, Gulp, Bower, Browsersync'
+                                            'div',
+                                            { className: 'content is-flex' },
+                                            _react2.default.createElement(
+                                                'p',
+                                                { className: 'project-description' },
+                                                _react2.default.createElement(
+                                                    'strong',
+                                                    null,
+                                                    'Sweet Yams'
+                                                ),
+                                                ' was a project that I was a part of for a local, organic restaurant.  The application had a CRUD build for the restaurant owners to update the menu.  Another big feature built for the application was the menu and ordering system.'
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'project-technologies' },
+                                                _react2.default.createElement(
+                                                    'p',
+                                                    null,
+                                                    _react2.default.createElement(
+                                                        'strong',
+                                                        null,
+                                                        'Technologies used:'
+                                                    ),
+                                                    ' Laravel Framework, Twitter Bootstrap, jQuery, Custom Flexbox, Vue.js, NPM, Gulp, Bower, Browsersync'
+                                                ),
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://github.com/thesweetyams/sweetyams', className: 'is-flex github-container' },
+                                                    _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'github-span' },
+                                                        'Github'
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'box' },
+                        _react2.default.createElement(
+                            'article',
+                            { className: 'media' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'columns' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'column is-5 is-flex image-column' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'media-left is-flex' },
+                                        _react2.default.createElement(
+                                            'figure',
+                                            { className: 'image-container' },
+                                            _react2.default.createElement('img', { src: '/images/wackamole.png', alt: 'Image' })
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'column is-7' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'media-content is-flex media-flex' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'content is-flex' },
+                                            _react2.default.createElement(
+                                                'p',
+                                                { className: 'project-description' },
+                                                _react2.default.createElement(
+                                                    'strong',
+                                                    null,
+                                                    'Whack-a-mole'
+                                                ),
+                                                ' is a fun jQuery focused JavaScript game that has a basic score counter and random images that pop up on click.'
+                                            ),
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'project-technologies' },
+                                                _react2.default.createElement(
+                                                    'p',
+                                                    null,
+                                                    _react2.default.createElement(
+                                                        'strong',
+                                                        null,
+                                                        'Technologies used:'
+                                                    ),
+                                                    ' HTML, CSS, JavaScript, jQuery'
+                                                ),
+                                                _react2.default.createElement(
+                                                    'a',
+                                                    { href: 'https://github.com/cjsampson/Whack-a-Mole', className: 'is-flex github-container' },
+                                                    _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
+                                                    _react2.default.createElement(
+                                                        'span',
+                                                        { className: 'github-span' },
+                                                        'Github'
+                                                    )
+                                                )
+                                            )
+                                        )
                                     )
                                 )
                             )
@@ -27734,7 +27871,7 @@ exports = module.exports = __webpack_require__(245)();
 
 
 // module
-exports.push([module.i, ".image-container {\n  max-width: 300px; }\n\n.project-description {\n  padding: 10px;\n  margin-left: 10px; }\n\n.project-technologies {\n  padding: 10px;\n  margin-left: 10px; }\n\n.box {\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }\n\n.box:hover {\n  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/portfolio.sass"],"names":[],"mappings":"AAAA;EACI,iBAAiB,EAAG;;AAExB;EACI,cAAc;EACd,kBAAkB,EAAG;;AAEzB;EACI,cAAc;EACd,kBAAkB,EAAG;;AAEzB;EACK,yEAAsD;EACtD,sDAAiC,EAAiB;;AAEvD;EACI,6EAA0D,EAAe","file":"portfolio.sass","sourcesContent":[".image-container {\n    max-width: 300px; }\n\n.project-description {\n    padding: 10px;\n    margin-left: 10px; }\n\n.project-technologies {\n    padding: 10px;\n    margin-left: 10px; }\n\n.box {\n     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\n     transition: all 0.3s cubic-bezier(.25,.8,.25,1); }\n\n.box:hover {\n    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".image-container {\n  max-width: 300px; }\n\n.project-description {\n  padding: 10px;\n  margin-left: 10px; }\n\n.project-technologies {\n  padding: 10px;\n  margin-left: 10px; }\n\n.box {\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }\n\n.box:hover {\n  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }\n\n.media-content.is-flex.media-flex {\n  flex-direction: column;\n  justify-content: space-between;\n  align-content: center;\n  align-items: space-between;\n  height: 100%; }\n\n.content {\n  height: 100%;\n  flex-direction: column;\n  justify-content: space-around; }\n\n.media-left.is-flex {\n  justify-content: center;\n  align-items: center; }\n\n.column.is-5.is-flex.image-column {\n  align-self: center; }\n\ndiv.media-left.is-flex {\n  justify-content: center; }\n\n.github-span {\n  margin-left: 10px;\n  line-height: 1; }\n\n.is-flex.github-container {\n  justify-content: flex-end;\n  align-items: flex-end;\n  border-bottom: none;\n  color: grey; }\n\n.content a:not(.button) {\n  border-bottom: 0; }\n\n.content a:not(.button):visited {\n  color: #111; }\n\n.fa.fa-github {\n  justify-content: flex-end;\n  align-self: flex-end; }\n\nspan.github-span {\n  align-self: flex-end; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/portfolio.sass"],"names":[],"mappings":"AAAA;EACI,iBAAiB,EAAG;;AAExB;EACI,cAAc;EACd,kBAAkB,EAAG;;AAEzB;EACI,cAAc;EACd,kBAAkB,EAAG;;AAEzB;EACK,yEAAsD;EACtD,sDAAiC,EAAiB;;AAEvD;EACI,6EAA0D,EAAe;;AAE7E;EACI,uBAAuB;EACvB,+BAA+B;EAC/B,sBAAsB;EACtB,2BAA2B;EAC3B,aAAa,EAAG;;AAEpB;EACI,aAAa;EACb,uBAAuB;EACvB,8BAA8B,EAAG;;AAErC;EACI,wBAAwB;EACxB,oBAAoB,EAAG;;AAE3B;EACI,mBAAmB,EAAG;;AAE1B;EACI,wBAAwB,EAAG;;AAE/B;EACI,kBAAkB;EAClB,eAAe,EAAG;;AAEtB;EACI,0BAA0B;EAC1B,sBAAsB;EACtB,oBAAoB;EACpB,YAAY,EAAG;;AAEnB;EACI,iBAAiB,EAAG;;AAExB;EACI,YAAY,EAAG;;AAEnB;EACI,0BAA0B;EAC1B,qBAAqB,EAAG;;AAE5B;EACI,qBAAqB,EAAG","file":"portfolio.sass","sourcesContent":[".image-container {\n    max-width: 300px; }\n\n.project-description {\n    padding: 10px;\n    margin-left: 10px; }\n\n.project-technologies {\n    padding: 10px;\n    margin-left: 10px; }\n\n.box {\n     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\n     transition: all 0.3s cubic-bezier(.25,.8,.25,1); }\n\n.box:hover {\n    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }\n\n.media-content.is-flex.media-flex {\n    flex-direction: column;\n    justify-content: space-between;\n    align-content: center;\n    align-items: space-between;\n    height: 100%; }\n\n.content {\n    height: 100%;\n    flex-direction: column;\n    justify-content: space-around; }\n\n.media-left.is-flex {\n    justify-content: center;\n    align-items: center; }\n\n.column.is-5.is-flex.image-column {\n    align-self: center; }\n\ndiv.media-left.is-flex {\n    justify-content: center; }\n\n.github-span {\n    margin-left: 10px;\n    line-height: 1; }\n\n.is-flex.github-container {\n    justify-content: flex-end;\n    align-items: flex-end;\n    border-bottom: none;\n    color: grey; }\n\n.content a:not(.button) {\n    border-bottom: 0; }\n\n.content a:not(.button):visited {\n    color: #111; }\n\n.fa.fa-github {\n    justify-content: flex-end;\n    align-self: flex-end; }\n\nspan.github-span {\n    align-self: flex-end; }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
