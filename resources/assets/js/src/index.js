@@ -7,13 +7,16 @@ import App from './components/App';
 import About from './components/About';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
 import NotFound from './components/NotFound';
 
 const Index = () => (
     <Router history={hashHistory}>
         <Route path="/" component={App}>
             <Route path="/blog" component={Blog}/>
+            <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
+            <Route path="/portfolio" component={Portfolio}/>
             <Route path="*" component={NotFound}/>
         </Route>
     </Router>

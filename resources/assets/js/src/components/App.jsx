@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router';
 
+import Header from './Header';
+import Footer from './Footer';
+
 
 class App extends Component {
     render(){
         return(
             <div>
+                <Header />
+                
                 <div className="container-fluid">
                     <nav className="navbar navbar-light bg-faded">                        
                         <a className="navbar-brand" href="#">CJ Sampson's Portfolio</a>
@@ -30,6 +35,8 @@ class App extends Component {
                 <div className="container">
                     {this.props.children}
                 </div>
+
+                <Footer />
             </div>
         );
     }
