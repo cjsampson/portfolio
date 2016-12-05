@@ -1,1 +1,14 @@
 Hey There!  My name is CJ Sampson and I'm a software developer from Navarre Beach Florida.  When I'm not programming, I'm usually reading books or listening to the  Doctor Rhonda Podcast.  
+
+
+<footer className="section footer is-bold">
+                <div className="container">
+                    <div className="columns">
+                        <div className="column is">
+                            <a href="https://twitter.com/CJSampsonite">
+                                Twitter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer> 

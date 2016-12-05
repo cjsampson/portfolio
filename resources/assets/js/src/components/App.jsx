@@ -13,9 +13,9 @@ class App extends Component {
                 <Header />
                
                <div className="section main-section">                
-                    <div className="container">
-                        {this.props.children}
-                    </div>
+                    
+                    {this.props.children}
+                    
                 </div>
 
                 <Footer />
