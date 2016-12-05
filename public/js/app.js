@@ -8500,8 +8500,12 @@ var App = function (_Component) {
                 _react2.default.createElement(_Header2.default, null),
                 _react2.default.createElement(
                     'div',
-                    { className: 'container' },
-                    this.props.children
+                    { className: 'section' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'container' },
+                        this.props.children
+                    )
                 ),
                 _react2.default.createElement(_Footer2.default, null)
             );
@@ -27081,40 +27085,35 @@ var Header = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'header',
-                { className: 'header-color' },
+                { className: 'header-color header' },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'columns' },
+                        { className: 'columns border-me' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'column is-half is-flex' },
+                            { className: 'column is-half' },
                             _react2.default.createElement(
                                 'li',
-                                { className: 'header-name header-list-item' },
+                                { className: 'header-name' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { className: 'header-name-link', to: '/' },
+                                    { className: 'header-name-brand', to: '/' },
                                     'CJ Sampson'
                                 )
-                            ),
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'column is-half header-pages-container' },
                             _react2.default.createElement(
                                 'li',
                                 { className: 'header-list-item' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { className: '', to: '/' },
-                                    'Home'
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'li',
-                                { className: 'header-list-item' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { className: '', to: 'about' },
+                                    { className: 'header-name-link', to: 'about' },
                                     'About'
                                 )
                             ),
@@ -27123,7 +27122,7 @@ var Header = function (_Component) {
                                 { className: 'header-list-item' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { className: '', to: 'portfolio' },
+                                    { className: 'header-name-link', to: 'portfolio' },
                                     'Portfolio'
                                 )
                             ),
@@ -27132,7 +27131,7 @@ var Header = function (_Component) {
                                 { className: 'header-list-item' },
                                 _react2.default.createElement(
                                     _reactRouter.Link,
-                                    { className: '', to: 'contact' },
+                                    { className: 'header-name-link', to: 'contact' },
                                     'Contact'
                                 )
                             )
@@ -27157,7 +27156,7 @@ exports = module.exports = __webpack_require__(245)();
 
 
 // module
-exports.push([module.i, "header {\n  border-bottom: 3px solid black; }\n\n.header-name {\n  font-family: 'Bangers', cursive; }\n\n.header-color {\n  background-color: #FF851B; }\n\n.header-list-item {\n  list-style-type: none;\n  color: #fff; }\n\n.header-name-link {\n  color: black; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/main.sass"],"names":[],"mappings":"AAEA;EACI,+BAA+B,EAAG;;AAEtC;EACI,gCAAgC,EAAG;;AAEvC;EACI,0BATY,EASgB;;AAEhC;EACI,sBAAsB;EACtB,YAAY,EAAG;;AAEnB;EACI,aAAa,EAAG","file":"main.sass","sourcesContent":["$orange: #FF851B;\n\nheader {\n    border-bottom: 3px solid black; }\n\n.header-name {\n    font-family: 'Bangers', cursive; }\n\n.header-color {\n    background-color: $orange; }\n\n.header-list-item {\n    list-style-type: none;\n    color: #fff; }\n\n.header-name-link {\n    color: black; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".border-me {\n  border: 1px solid black; }\n\nheader {\n  border-bottom: 3px solid black; }\n\n.header-name {\n  font-family: 'Bangers', cursive; }\n\n.header-color {\n  background-color: #FF851B; }\n\n.header-list-item {\n  list-style-type: none;\n  color: #fff;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header-name-brand {\n  font-size: 3em;\n  color: black; }\n\n.header-name-link {\n  color: black; }\n\n.header-pages-container {\n  display: flex;\n  justify-content: flex-end;\n  align-content: center;\n  border: 1px solid black; }\n\n.header-pages-container li {\n  margin-left: 20px;\n  font-size: 1.5em; }\n\n.header {\n  height: 95px; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/main.sass"],"names":[],"mappings":"AAAA;EACI,wBAAwB,EAAG;;AAI/B;EACI,+BAA+B,EAAG;;AAEtC;EACI,gCAAgC,EAAG;;AAEvC;EACI,0BATY,EASgB;;AAEhC;EACI,sBAAsB;EACtB,YAAY;EACZ,cAAc;EACd,wBAAwB;EACxB,oBAAoB,EAAG;;AAE3B;EACI,eAAe;EACf,aAAa,EAAG;;AAEpB;EACI,aAAa,EAAG;;AAEpB;EACI,cAAc;EACd,0BAA0B;EAC1B,sBAAsB;EACtB,wBAAwB,EAAG;;AAE/B;EACI,kBAAkB;EAClB,iBAAiB,EAAG;;AAExB;EACI,aAAa,EAAG","file":"main.sass","sourcesContent":[".border-me {\n    border: 1px solid black; }\n\n$orange: #FF851B;\n\nheader {\n    border-bottom: 3px solid black; }\n\n.header-name {\n    font-family: 'Bangers', cursive; }\n\n.header-color {\n    background-color: $orange; }\n\n.header-list-item {\n    list-style-type: none;\n    color: #fff;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n\n.header-name-brand {\n    font-size: 3em;\n    color: black; }\n\n.header-name-link {\n    color: black; }\n\n.header-pages-container {\n    display: flex;\n    justify-content: flex-end;\n    align-content: center;\n    border: 1px solid black; }\n\n.header-pages-container li {\n    margin-left: 20px;\n    font-size: 1.5em; }\n\n.header {\n    height: 95px; }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 

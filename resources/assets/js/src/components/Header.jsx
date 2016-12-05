@@ -7,25 +7,31 @@ import '../../../sass/main.sass';
 class Header extends Component {
     render() {
         return (
-            <header className="header-color">
+            <header className="header-color header">
                 <div className="container">
-                    <div className="columns">
-                        <div className="column is-half is-flex">
-                            <li className="header-name header-list-item">
-                                <Link className="header-name-link" to="/">CJ Sampson</Link>
+
+                    <div className="columns border-me">
+
+                        <div className="column is-half">
+                            <li className="header-name">
+                                <Link className="header-name-brand" to="/">CJ Sampson</Link>
                             </li>                    
+                        </div>
+
+                        <div className="column is-half header-pages-container">
+
                             <li className="header-list-item">
-                                <Link className="" to="/">Home</Link>
+                                <Link className="header-name-link" to="about">About</Link>
                             </li>
+
                             <li className="header-list-item">
-                                <Link className="" to="about">About</Link>
+                                <Link className="header-name-link" to="portfolio">Portfolio</Link>
                             </li>
+
                             <li className="header-list-item">
-                                <Link className="" to="portfolio">Portfolio</Link>
+                                <Link className="header-name-link" to="contact">Contact</Link>
                             </li>
-                            <li className="header-list-item">
-                                <Link className="" to="contact">Contact</Link>
-                            </li>
+
                         </div>
                     </div>
                 </div>

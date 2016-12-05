@@ -9,9 +9,11 @@ class App extends Component {
         return(
             <div>
                 <Header />
-                
-                <div className="container">
-                    {this.props.children}
+               
+               <div className="section">                
+                    <div className="container">
+                        {this.props.children}
+                    </div>
                 </div>
 
                 <Footer />
