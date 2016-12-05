@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
+import '../../../sass/app.sass';
+
 
 class App extends Component {
     render(){
@@ -10,7 +12,7 @@ class App extends Component {
             <div>
                 <Header />
                
-               <div className="section">                
+               <div className="section main-section">                
                     <div className="container">
                         {this.props.children}
                     </div>

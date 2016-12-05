@@ -4,10 +4,12 @@
 $orange: #FF851B
 
 header
+    border-top: 3px solid black
     border-bottom: 3px solid black
 
 .header-name
     font-family: 'Bangers', cursive
+    list-style-type: none
 
 .header-color
     background-color: $orange
@@ -18,23 +20,47 @@ header
     display: flex
     justify-content: center
     align-items: center
+    font-weight: 200
 
 .header-name-brand
     font-size: 3em
-    color: black
+    color: white
+    padding-left: 35px
+    font-family: 'Bangers', cursive
+
+.header-name-brand:hover
+    color: white
 
 .header-name-link
     color: black
+    margin-left: 35px
+    font-size: 1.5em
+    box-sizing: border-box
+
+.header-name-link:hover
+    color: white
 
 .header-pages-container
     display: flex
     justify-content: flex-end
     align-content: center
-    border: 1px solid black
-
-.header-pages-container li
-    margin-left: 20px
-    font-size: 1.5em
 
 .header
     height: 95px
+
+.columns-container 
+    padding-top: 15px
+    padding-left: 30px
+    padding-right: 30px
+
+.is-active
+    color: white
+
+.is-active:hover
+    color: black
+
+.is-orange
+    background-color: $orange
+
+.nav-item a, a.nav-item
+    color: white

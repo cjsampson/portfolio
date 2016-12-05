@@ -8403,10 +8403,10 @@ module.exports = getIteratorFn;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = undefined;
 
@@ -8425,26 +8425,67 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var About = function (_Component) {
-    _inherits(About, _Component);
+  _inherits(About, _Component);
 
-    function About() {
-        _classCallCheck(this, About);
+  function About() {
+    _classCallCheck(this, About);
 
-        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+  }
+
+  _createClass(About, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "hero-body" },
+        _react2.default.createElement(
+          "div",
+          { className: "container has-text-centered" },
+          _react2.default.createElement(
+            "div",
+            { className: "columns is-vcentered" },
+            _react2.default.createElement(
+              "div",
+              { className: "column is-5" },
+              _react2.default.createElement(
+                "figure",
+                { className: "image is-4by3" },
+                _react2.default.createElement("img", { src: "https://images.unsplash.com/photo-1461669802687-84a1aee43a29?dpr=1&auto=format&crop=entropy&fit=crop&w=800&h=600&q=80", className: "promo-img", alt: "Description" })
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "column is-6 is-offset-1" },
+              _react2.default.createElement(
+                "h1",
+                { className: "title is-2" },
+                "Introducing Landing Page"
+              ),
+              _react2.default.createElement(
+                "h2",
+                { className: "subtitle is-4" },
+                "It's time to say hello to bulma."
+              ),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement(
+                "p",
+                { className: "control has-addons has-text-centered" },
+                _react2.default.createElement("input", { className: "input is-expanded is-large", type: "text", placeholder: "Join the beta waitlist, you@example.org" }),
+                _react2.default.createElement(
+                  "a",
+                  { className: "button is-large is-danger is-outlined" },
+                  "Sign Up"
+                )
+              )
+            )
+          )
+        )
+      );
     }
+  }]);
 
-    _createClass(About, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                'About'
-            );
-        }
-    }]);
-
-    return About;
+  return About;
 }(_react.Component);
 
 exports.default = About;
@@ -8474,6 +8515,8 @@ var _Footer = __webpack_require__(240);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
+__webpack_require__(247);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8500,7 +8543,7 @@ var App = function (_Component) {
                 _react2.default.createElement(_Header2.default, null),
                 _react2.default.createElement(
                     'div',
-                    { className: 'section' },
+                    { className: 'section main-section' },
                     _react2.default.createElement(
                         'div',
                         { className: 'container' },
@@ -8577,7 +8620,7 @@ exports.default = Blog;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -8608,13 +8651,9 @@ var Contact = function (_Component) {
     }
 
     _createClass(Contact, [{
-        key: 'render',
+        key: "render",
         value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                'Contact'
-            );
+            return _react2.default.createElement("div", { className: "hero-body" });
         }
     }]);
 
@@ -27001,7 +27040,7 @@ exports.default = Portfolio;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -27031,9 +27070,13 @@ var Footer = function (_Component) {
     }
 
     _createClass(Footer, [{
-        key: 'render',
+        key: "render",
         value: function render() {
-            return _react2.default.createElement('footer', null);
+            return _react2.default.createElement(
+                "footer",
+                { className: "footer" },
+                _react2.default.createElement("div", { className: "container" })
+            );
         }
     }]);
 
@@ -27084,55 +27127,66 @@ var Header = function (_Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'header',
-                { className: 'header-color header' },
+                'section',
+                { className: 'hero is-orange is-bold is-medium' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'container' },
+                    { className: 'hero-head' },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'columns border-me' },
+                        'header',
+                        { className: 'nav' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'column is-half' },
+                            { className: 'container' },
                             _react2.default.createElement(
-                                'li',
-                                { className: 'header-name' },
+                                'div',
+                                { className: 'nav-left' },
                                 _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { className: 'header-name-brand', to: '/' },
-                                    'CJ Sampson'
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'column is-half header-pages-container' },
-                            _react2.default.createElement(
-                                'li',
-                                { className: 'header-list-item' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { className: 'header-name-link', to: 'about' },
-                                    'About'
+                                    'li',
+                                    { className: 'nav-item' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { className: 'header-name-brand', to: '/' },
+                                        'CJ Sampson'
+                                    )
                                 )
                             ),
                             _react2.default.createElement(
-                                'li',
-                                { className: 'header-list-item' },
-                                _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { className: 'header-name-link', to: 'portfolio' },
-                                    'Portfolio'
-                                )
+                                'span',
+                                { className: 'nav-toggle' },
+                                _react2.default.createElement('span', null),
+                                _react2.default.createElement('span', null),
+                                _react2.default.createElement('span', null)
                             ),
                             _react2.default.createElement(
-                                'li',
-                                { className: 'header-list-item' },
+                                'div',
+                                { className: 'nav-right nav-menu' },
                                 _react2.default.createElement(
-                                    _reactRouter.Link,
-                                    { className: 'header-name-link', to: 'contact' },
-                                    'Contact'
+                                    'li',
+                                    { className: 'nav-item' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { activeClassName: 'is-active', className: 'header-name-link', to: 'about' },
+                                        'About'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    { className: 'header-list-item' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { activeClassName: 'is-active', className: 'header-name-link', to: 'portfolio' },
+                                        'Portfolio'
+                                    )
+                                ),
+                                _react2.default.createElement(
+                                    'li',
+                                    { className: 'header-list-item' },
+                                    _react2.default.createElement(
+                                        _reactRouter.Link,
+                                        { activeClassName: 'is-active', className: 'header-name-link', to: 'contact' },
+                                        'Contact'
+                                    )
                                 )
                             )
                         )
@@ -27156,7 +27210,7 @@ exports = module.exports = __webpack_require__(245)();
 
 
 // module
-exports.push([module.i, ".border-me {\n  border: 1px solid black; }\n\nheader {\n  border-bottom: 3px solid black; }\n\n.header-name {\n  font-family: 'Bangers', cursive; }\n\n.header-color {\n  background-color: #FF851B; }\n\n.header-list-item {\n  list-style-type: none;\n  color: #fff;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.header-name-brand {\n  font-size: 3em;\n  color: black; }\n\n.header-name-link {\n  color: black; }\n\n.header-pages-container {\n  display: flex;\n  justify-content: flex-end;\n  align-content: center;\n  border: 1px solid black; }\n\n.header-pages-container li {\n  margin-left: 20px;\n  font-size: 1.5em; }\n\n.header {\n  height: 95px; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/main.sass"],"names":[],"mappings":"AAAA;EACI,wBAAwB,EAAG;;AAI/B;EACI,+BAA+B,EAAG;;AAEtC;EACI,gCAAgC,EAAG;;AAEvC;EACI,0BATY,EASgB;;AAEhC;EACI,sBAAsB;EACtB,YAAY;EACZ,cAAc;EACd,wBAAwB;EACxB,oBAAoB,EAAG;;AAE3B;EACI,eAAe;EACf,aAAa,EAAG;;AAEpB;EACI,aAAa,EAAG;;AAEpB;EACI,cAAc;EACd,0BAA0B;EAC1B,sBAAsB;EACtB,wBAAwB,EAAG;;AAE/B;EACI,kBAAkB;EAClB,iBAAiB,EAAG;;AAExB;EACI,aAAa,EAAG","file":"main.sass","sourcesContent":[".border-me {\n    border: 1px solid black; }\n\n$orange: #FF851B;\n\nheader {\n    border-bottom: 3px solid black; }\n\n.header-name {\n    font-family: 'Bangers', cursive; }\n\n.header-color {\n    background-color: $orange; }\n\n.header-list-item {\n    list-style-type: none;\n    color: #fff;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n\n.header-name-brand {\n    font-size: 3em;\n    color: black; }\n\n.header-name-link {\n    color: black; }\n\n.header-pages-container {\n    display: flex;\n    justify-content: flex-end;\n    align-content: center;\n    border: 1px solid black; }\n\n.header-pages-container li {\n    margin-left: 20px;\n    font-size: 1.5em; }\n\n.header {\n    height: 95px; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".border-me {\n  border: 1px solid black; }\n\nheader {\n  border-top: 3px solid black;\n  border-bottom: 3px solid black; }\n\n.header-name {\n  font-family: 'Bangers', cursive;\n  list-style-type: none; }\n\n.header-color {\n  background-color: #FF851B; }\n\n.header-list-item {\n  list-style-type: none;\n  color: #fff;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-weight: 200; }\n\n.header-name-brand {\n  font-size: 3em;\n  color: white;\n  padding-left: 35px;\n  font-family: 'Bangers', cursive; }\n\n.header-name-brand:hover {\n  color: white; }\n\n.header-name-link {\n  color: black;\n  margin-left: 35px;\n  font-size: 1.5em;\n  box-sizing: border-box; }\n\n.header-name-link:hover {\n  color: white; }\n\n.header-pages-container {\n  display: flex;\n  justify-content: flex-end;\n  align-content: center; }\n\n.header {\n  height: 95px; }\n\n.columns-container {\n  padding-top: 15px;\n  padding-left: 30px;\n  padding-right: 30px; }\n\n.is-active {\n  color: white; }\n\n.is-active:hover {\n  color: black; }\n\n.is-orange {\n  background-color: #FF851B; }\n\n.nav-item a, a.nav-item {\n  color: white; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/main.sass"],"names":[],"mappings":"AAAA;EACI,wBAAwB,EAAG;;AAI/B;EACI,4BAA4B;EAC5B,+BAA+B,EAAG;;AAEtC;EACI,gCAAgC;EAChC,sBAAsB,EAAG;;AAE7B;EACI,0BAXY,EAWgB;;AAEhC;EACI,sBAAsB;EACtB,YAAY;EACZ,cAAc;EACd,wBAAwB;EACxB,oBAAoB;EACpB,iBAAiB,EAAG;;AAExB;EACI,eAAe;EACf,aAAa;EACb,mBAAmB;EACnB,gCAAgC,EAAG;;AAEvC;EACI,aAAa,EAAG;;AAEpB;EACI,aAAa;EACb,kBAAkB;EAClB,iBAAiB;EACjB,uBAAuB,EAAG;;AAE9B;EACI,aAAa,EAAG;;AAEpB;EACI,cAAc;EACd,0BAA0B;EAC1B,sBAAsB,EAAG;;AAE7B;EACI,aAAa,EAAG;;AAEpB;EACI,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB,EAAG;;AAE3B;EACI,aAAa,EAAG;;AAEpB;EACI,aAAa,EAAG;;AAEpB;EACI,0BA3DY,EA2DgB;;AAEhC;EACI,aAAa,EAAG","file":"main.sass","sourcesContent":[".border-me {\n    border: 1px solid black; }\n\n$orange: #FF851B;\n\nheader {\n    border-top: 3px solid black;\n    border-bottom: 3px solid black; }\n\n.header-name {\n    font-family: 'Bangers', cursive;\n    list-style-type: none; }\n\n.header-color {\n    background-color: $orange; }\n\n.header-list-item {\n    list-style-type: none;\n    color: #fff;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-weight: 200; }\n\n.header-name-brand {\n    font-size: 3em;\n    color: white;\n    padding-left: 35px;\n    font-family: 'Bangers', cursive; }\n\n.header-name-brand:hover {\n    color: white; }\n\n.header-name-link {\n    color: black;\n    margin-left: 35px;\n    font-size: 1.5em;\n    box-sizing: border-box; }\n\n.header-name-link:hover {\n    color: white; }\n\n.header-pages-container {\n    display: flex;\n    justify-content: flex-end;\n    align-content: center; }\n\n.header {\n    height: 95px; }\n\n.columns-container {\n    padding-top: 15px;\n    padding-left: 30px;\n    padding-right: 30px; }\n\n.is-active {\n    color: white; }\n\n.is-active:hover {\n    color: black; }\n\n.is-orange {\n    background-color: $orange; }\n\n.nav-item a, a.nav-item {\n    color: white; }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
@@ -27494,6 +27548,46 @@ module.exports = function() {
 	return list;
 };
 
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(245)();
+// imports
+
+
+// module
+exports.push([module.i, ".main-section {\n  min-height: 90vh; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/app.sass"],"names":[],"mappings":"AAAA;EACI,iBAAiB,EAAG","file":"app.sass","sourcesContent":[".main-section {\n    min-height: 90vh; }\n"],"sourceRoot":"webpack://"}]);
+
+// exports
+
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(246);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(243)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./app.sass", function() {
+			var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./app.sass");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ }
 /******/ ]);
