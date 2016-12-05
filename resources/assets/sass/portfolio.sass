@@ -1,3 +1,9 @@
+$orange: #FF851B
+
+
+.media-left
+    margin-right: 0
+
 .image-container
     max-width: 300px
 
@@ -46,7 +52,7 @@ div.media-left.is-flex
     justify-content: flex-end
     align-items: flex-end
     border-bottom: none
-    color: grey
+    color: #111
 
 .content a:not(.button)
     border-bottom: 0
@@ -60,3 +66,19 @@ div.media-left.is-flex
 
 span.github-span
     align-self: flex-end
+
+.is-one-quarter.is-fixed
+    position: absolute
+    right: 75px
+    top: 10px
+    max-width: 200px
+
+@media (max-width: 769px) 
+    .column.is-5.is-flex.image-column
+        border-right: 0
+
+.column.is-5.is-flex.image-column
+    border-radius: 4px
+
+div.section.main-section
+    background-color: whitesmoke

@@ -36,6 +36,7 @@ module.exports = {
                    'sass-loader?sourceMap',
                ],
            },
+           {test: /\.(jpe?g|png|gif)$/i, loader: 'file?name=[name].[ext]'},
        ],
    },
 };
