@@ -37,7 +37,25 @@ export default class Portfolio extends Component {
                                     <p className="project-description"><strong>TandC</strong> is an application that has all sorts of resources from videos to articles all co-created by yours truely.  TandC uses Laravel for the backend while utilizing the Bulma CSS framework for layout/templating, jQuery for DOM maniputaion and user interaction, and many more open-source libraries.</p>
                                 </div>
                                 <div className="technologies-used">
-                                    <p className="project-technologies"><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, Bulma Framework, NPM, Gulp, Homestead</p>
+                                    <p className="project-technologies"><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, AJAX, Datatables, Bulma Framework, NPM, Gulp, Homestead</p>
+                                </div>                  
+                            </div>
+                        </article>
+                    </div>
+
+                    <div className="box">
+                        <article className="media">
+                            <div className="media-left">
+                                <figure className="image-container">
+                                    <img src="/images/tandc.png" alt="Image" />
+                                </figure>
+                            </div>
+                            <div className="media-content">
+                                <div className="content">
+                                    <p className="project-description"><strong>Sweet Yams</strong> was a project that I was a part of for a local, organic restaurant.  The application had a CRUD build for the restaurant owners to update the menu.  Another big feature built for the application was the menu and ordering system.</p>
+                                </div>
+                                <div className="technologies-used">
+                                    <p className="project-technologies"><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, Custom Flexbox, Vue.js, NPM, Gulp, Bower, Browsersync</p>
                                 </div>                  
                             </div>
                         </article>

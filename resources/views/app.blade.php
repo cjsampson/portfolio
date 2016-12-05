@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('assets/css/bulma/css/bulma.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <title>CJ Sampson's Portfolio</title>
 </head>
 <body>
