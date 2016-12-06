@@ -13242,7 +13242,7 @@ var Footer = function (_Component) {
                             { className: 'columns' },
                             _react2.default.createElement(
                                 'div',
-                                { className: 'column' },
+                                { className: 'column columnSelect' },
                                 _react2.default.createElement(
                                     'div',
                                     { className: 'icon-container is-flex' },
@@ -13254,13 +13254,13 @@ var Footer = function (_Component) {
                                             { className: 'social-footer-span' },
                                             'Contact'
                                         ),
-                                        _react2.default.createElement('i', { className: 'fa fa-envelope', 'aria-hidden': 'true' })
+                                        _react2.default.createElement('i', { className: 'fa fa-envelope fa-lg', 'aria-hidden': 'true' })
                                     )
                                 )
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { className: 'column' },
+                                { className: 'column columnSelect' },
                                 _react2.default.createElement(
                                     'div',
                                     { className: 'icon-container is-flex' },
@@ -13272,13 +13272,13 @@ var Footer = function (_Component) {
                                             { className: 'social-footer-span' },
                                             'Twitter'
                                         ),
-                                        _react2.default.createElement('i', { className: 'fa fa-twitter-square', 'aria-hidden': 'true' })
+                                        _react2.default.createElement('i', { className: 'fa fa-twitter-square fa-lg', 'aria-hidden': 'true' })
                                     )
                                 )
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { className: 'column' },
+                                { className: 'column columnSelect' },
                                 _react2.default.createElement(
                                     'div',
                                     { className: 'icon-container is-flex' },
@@ -13290,13 +13290,13 @@ var Footer = function (_Component) {
                                             { className: 'social-footer-span' },
                                             'Github'
                                         ),
-                                        _react2.default.createElement('i', { className: 'fa fa-github-square', 'aria-hidden': 'true' })
+                                        _react2.default.createElement('i', { className: 'fa fa-github-square fa-lg', 'aria-hidden': 'true' })
                                     )
                                 )
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { className: 'column' },
+                                { className: 'column columnSelect' },
                                 _react2.default.createElement(
                                     'div',
                                     { className: 'icon-container is-flex' },
@@ -13308,7 +13308,7 @@ var Footer = function (_Component) {
                                             { className: 'social-footer-span' },
                                             'LinkedIn'
                                         ),
-                                        _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-2x', 'aria-hidden': 'true' })
+                                        _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-lg', 'aria-hidden': 'true' })
                                     )
                                 )
                             )
@@ -28109,7 +28109,7 @@ exports = module.exports = __webpack_require__(42)();
 
 
 // module
-exports.push([module.i, ".footer {\n  background-color: #FF851B;\n  border-bottom: 3px solid #111;\n  border-top: 3px solid #111; }\n\n.is-orange {\n  background: linear-gradient(109deg, #FF851B, #ffc86f); }\n\na.footer-social {\n  text-decoration: none;\n  width: 25%;\n  height: 100%; }\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n  border-bottom: none; }\n\n.icon-container {\n  height: 25px;\n  justify-content: center;\n  align-items: center;\n  align-content: center; }\n\n.social-footer-span {\n  min-width: 110px;\n  flex-basis: 150px;\n  margin-right: 10px;\n  line-height: 1;\n  font-size: 2em;\n  color: white; }\n\n.fa {\n  flex-basis: 30px;\n  line-height: 1;\n  font-size: 2em;\n  color: white; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/footer.sass"],"names":[],"mappings":"AAEA;EACI,0BAHY;EAIZ,8BAA8B;EAC9B,2BAA2B,EAAG;;AAElC;EACI,sDAA2B,EAA6B;;AAE5D;EACI,sBAAsB;EACtB,WAAW;EACX,aAAa,EAAG;;AAGpB;EACI,oBAAoB,EAAG;;AAE3B;EACI,aAAa;EACb,wBAAwB;EACxB,oBAAoB;EACpB,sBAAsB,EAAG;;AAE7B;EACI,iBAAiB;EACjB,kBAAkB;EAClB,mBAAmB;EACnB,eAAe;EACf,eAAe;EACf,aAAa,EAAG;;AAEpB;EACI,iBAAiB;EACjB,eAAe;EACf,eAAe;EACf,aAAa,EAAG","file":"footer.sass","sourcesContent":["$orange: #FF851B;\n\n.footer {\n    background-color: $orange;\n    border-bottom: 3px solid #111;\n    border-top: 3px solid #111; }\n\n.is-orange {\n    background: linear-gradient(109deg, $orange, #ffc86f); }\n\na.footer-social {\n    text-decoration: none;\n    width: 25%;\n    height: 100%; }\n\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n    border-bottom: none; }\n\n.icon-container {\n    height: 25px;\n    justify-content: center;\n    align-items: center;\n    align-content: center; }\n\n.social-footer-span {\n    min-width: 110px;\n    flex-basis: 150px;\n    margin-right: 10px;\n    line-height: 1;\n    font-size: 2em;\n    color: white; }\n\n.fa {\n    flex-basis: 30px;\n    line-height: 1;\n    font-size: 2em;\n    color: white; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".footer {\n  background-color: #FF851B;\n  border-bottom: 3px solid #111;\n  border-top: 3px solid #111; }\n\n.is-orange {\n  background: linear-gradient(109deg, #FF851B, #ffc86f); }\n\na.footer-social {\n  text-decoration: none;\n  width: 25%;\n  height: 100%; }\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n  border-bottom: none; }\n\n.icon-container {\n  height: 35px;\n  justify-content: center;\n  align-items: center;\n  background-color: black;\n  padding-top: 10px;\n  padding-bottom: 10px;\n  border-radius: 5px; }\n\n.social-footer-span {\n  min-width: 50px;\n  flex-basis: 150px;\n  margin-right: 10px;\n  color: white;\n  padding: 2px;\n  line-height: 1; }\n\n.fa {\n  flex-basis: 30px;\n  color: white;\n  line-height: 1; }\n\n.footer-social.is-flex {\n  justify-content: center; }\n\n.column.columnSelect {\n  transition: all 0.3s ease; }\n\n.column.columnSelect:hover {\n  transform: translateY(3px); }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/footer.sass"],"names":[],"mappings":"AAEA;EACI,0BAHY;EAIZ,8BAA8B;EAC9B,2BAA2B,EAAG;;AAElC;EACI,sDAA2B,EAA6B;;AAE5D;EACI,sBAAsB;EACtB,WAAW;EACX,aAAa,EAAG;;AAGpB;EACI,oBAAoB,EAAG;;AAE3B;EACI,aAAa;EACb,wBAAwB;EACxB,oBAAoB;EACpB,wBAAwB;EACxB,kBAAkB;EAClB,qBAAqB;EACrB,mBAAmB,EAAG;;AAE1B;EACI,gBAAgB;EAChB,kBAAkB;EAClB,mBAAmB;EACnB,aAAa;EACb,aAAa;EACb,eAAe,EAAG;;AAEtB;EACI,iBAAiB;EACjB,aAAa;EACb,eAAe,EAAG;;AAEtB;EACI,wBAAwB,EAAG;;AAE/B;EACI,0BAA0B,EAAG;;AAEjC;EACI,2BAAqB,EAAQ","file":"footer.sass","sourcesContent":["$orange: #FF851B;\n\n.footer {\n    background-color: $orange;\n    border-bottom: 3px solid #111;\n    border-top: 3px solid #111; }\n\n.is-orange {\n    background: linear-gradient(109deg, $orange, #ffc86f); }\n\na.footer-social {\n    text-decoration: none;\n    width: 25%;\n    height: 100%; }\n\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n    border-bottom: none; }\n\n.icon-container {\n    height: 35px;\n    justify-content: center;\n    align-items: center;\n    background-color: black;\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-radius: 5px; }\n\n.social-footer-span {\n    min-width: 50px;\n    flex-basis: 150px;\n    margin-right: 10px;\n    color: white;\n    padding: 2px;\n    line-height: 1; }\n\n.fa {\n    flex-basis: 30px;\n    color: white;\n    line-height: 1; }\n\n.footer-social.is-flex {\n    justify-content: center; }\n\n.column.columnSelect {\n    transition: all 0.3s ease; }\n\n.column.columnSelect:hover {\n    transform: translateY(3px); }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
