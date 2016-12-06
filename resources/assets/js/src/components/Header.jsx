@@ -4,6 +4,14 @@ import { Link } from 'react-router';
 
 import '../../../sass/main.sass';
 
+const ToggledNav = () => {
+    return (
+        <div>
+            Toggled Nav
+        </div>
+    );
+}
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -14,7 +22,8 @@ class Header extends Component {
     }
 
     handleHamburgerClick = () => {
-
+        console.log('toggled');
+        this.setState({ open: !this.state.open});
     }
     render() {
         return (
@@ -27,11 +36,13 @@ class Header extends Component {
                                     <Link className="header-name-brand" to="/">CJ Sampson</Link>
                                 </li>                                
                             </div>
-                            <span className="nav-toggle">
+                            { this.state.open ? <ToggledNav /> : null }
+                            <span className="nav-toggle" onClick={this.handleHamburgerClick}>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </span>
+                            
                             <div className="nav-right nav-menu">
 
                                 <li className="header-list-item">
