@@ -19,7 +19,7 @@ export default class Contact extends Component {
                             <img src="/images/mail.png" alt="mail pic" />                        
                         </figure>
                     </div>
-                    <div className="column is-half" id="contact-form">
+                    <div className="column is-half is-offset-1" id="contact-form">
                         <div className="box">
                             <label className="label">Name</label>
                             <p className="control">

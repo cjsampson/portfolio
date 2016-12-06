@@ -24,21 +24,15 @@ header
 
 .header-name-brand
     font-size: 3em
+    padding-right: 3px
     color: white
     padding-left: 35px
     font-family: 'Bangers', cursive
+    transition: all 0.3s ease-in
 
 .header-name-brand:hover
-    color: white
-
-.header-name-link
-    color: black
-    margin-left: 35px
-    font-size: 1.5em
-    box-sizing: border-box
-
-.header-name-link:hover
-    color: white
+    color: #111
+    transform: translateX(3px)
 
 .header-pages-container
     display: flex
@@ -53,17 +47,8 @@ header
     padding-left: 30px
     padding-right: 30px
 
-.is-active
-    color: white
-
-.is-active:hover
-    color: black
-
 .is-orange
     background-color: $orange
-
-.nav-item a, a.nav-item
-    color: white
 
 .nav-toggle
     position: absolute
@@ -71,3 +56,18 @@ header
     top: 20px
     border-top-left-radius: 5px
     border-bottom-left-radius: 5px
+
+.nav-item a, a.nav-item
+    color: #fff
+
+.header-name-link
+    color: black
+    margin-left: 35px
+    font-size: 1.5em
+    box-sizing: border-box
+
+.header-name-link:hover
+    color: white
+
+.is-active
+    color: white
