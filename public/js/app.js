@@ -27460,46 +27460,82 @@ var Footer = function (_Component) {
                     { className: 'hero-body' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'footer-wrapper' },
+                        { className: 'container' },
                         _react2.default.createElement(
-                            'a',
-                            { className: 'footer-social contact', href: '/contact' },
+                            'div',
+                            { className: 'columns' },
                             _react2.default.createElement(
-                                'span',
-                                { className: 'social-footer-span' },
-                                'Contact'
+                                'div',
+                                { className: 'column' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'icon-container is-flex' },
+                                    _react2.default.createElement(
+                                        'a',
+                                        { className: 'footer-social is-flex contact', href: '/contact' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            { className: 'social-footer-span' },
+                                            'Contact'
+                                        ),
+                                        _react2.default.createElement('i', { className: 'fa fa-envelope', 'aria-hidden': 'true' })
+                                    )
+                                )
                             ),
-                            _react2.default.createElement('i', { className: 'fa fa-envelope', 'aria-hidden': 'true' })
-                        ),
-                        _react2.default.createElement(
-                            'a',
-                            { className: 'footer-social twitter', href: 'https://twitter.com/CJSampsonite' },
                             _react2.default.createElement(
-                                'span',
-                                { className: 'social-footer-span' },
-                                'Twitter'
+                                'div',
+                                { className: 'column' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'icon-container is-flex' },
+                                    _react2.default.createElement(
+                                        'a',
+                                        { className: 'footer-social is-flex twitter', href: 'https://twitter.com/CJSampsonite' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            { className: 'social-footer-span' },
+                                            'Twitter'
+                                        ),
+                                        _react2.default.createElement('i', { className: 'fa fa-twitter-square', 'aria-hidden': 'true' })
+                                    )
+                                )
                             ),
-                            _react2.default.createElement('i', { className: 'fa fa-twitter-square', 'aria-hidden': 'true' })
-                        ),
-                        _react2.default.createElement(
-                            'a',
-                            { className: 'footer-social github', href: 'https://github.com/cjsampson' },
                             _react2.default.createElement(
-                                'span',
-                                { className: 'social-footer-span' },
-                                'Github'
+                                'div',
+                                { className: 'column' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'icon-container is-flex' },
+                                    _react2.default.createElement(
+                                        'a',
+                                        { className: 'footer-social is-flex github', href: 'https://github.com/cjsampson' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            { className: 'social-footer-span' },
+                                            'Github'
+                                        ),
+                                        _react2.default.createElement('i', { className: 'fa fa-github-square', 'aria-hidden': 'true' })
+                                    )
+                                )
                             ),
-                            _react2.default.createElement('i', { className: 'fa fa-github-square', 'aria-hidden': 'true' })
-                        ),
-                        _react2.default.createElement(
-                            'a',
-                            { className: 'footer-social linkedin', href: 'https://www.linkedin.com/in/christopher-sampson-3891b7b7' },
                             _react2.default.createElement(
-                                'span',
-                                { className: 'social-footer-span' },
-                                'LinkedIn'
-                            ),
-                            _react2.default.createElement('i', { className: 'fa fa-linkedin-square', 'aria-hidden': 'true' })
+                                'div',
+                                { className: 'column' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'icon-container is-flex' },
+                                    _react2.default.createElement(
+                                        'a',
+                                        { className: 'footer-social is-flex linkedin', href: 'https://www.linkedin.com/in/christopher-sampson-3891b7b7' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            { className: 'social-footer-span' },
+                                            'LinkedIn'
+                                        ),
+                                        _react2.default.createElement('i', { className: 'fa fa-linkedin-square', 'aria-hidden': 'true' })
+                                    )
+                                )
+                            )
                         )
                     )
                 )
@@ -28074,7 +28110,7 @@ exports = module.exports = __webpack_require__(245)();
 
 
 // module
-exports.push([module.i, ".footer {\n  background-color: #FF851B;\n  border-bottom: 3px solid #111;\n  border-top: 3px solid #111; }\n\n.is-orange {\n  background: linear-gradient(109deg, #FF851B, #ffc86f); }\n\na.footer-social {\n  text-decoration: none;\n  width: 25%;\n  height: 100%;\n  background-color: #FFF;\n  line-height: 100%; }\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n  border-bottom: none; }\n\ni.fa {\n  width: 20;\n  height: 20; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/footer.sass"],"names":[],"mappings":"AAEA;EACI,0BAHY;EAIZ,8BAA8B;EAC9B,2BAA2B,EAAG;;AAElC;EACI,sDAA2B,EAA6B;;AAE5D;EACI,sBAAsB;EACtB,WAAW;EACX,aAAa;EACb,uBAAuB;EACvB,kBAAkB,EAAG;;AAGzB;EACI,oBAAoB,EAAG;;AAE3B;EACI,UAAU;EACV,WAAW,EAAG","file":"footer.sass","sourcesContent":["$orange: #FF851B;\n\n.footer {\n    background-color: $orange;\n    border-bottom: 3px solid #111;\n    border-top: 3px solid #111; }\n\n.is-orange {\n    background: linear-gradient(109deg, $orange, #ffc86f); }\n\na.footer-social {\n    text-decoration: none;\n    width: 25%;\n    height: 100%;\n    background-color: #FFF;\n    line-height: 100%; }\n\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n    border-bottom: none; }\n\ni.fa {\n    width: 20;\n    height: 20; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".footer {\n  background-color: #FF851B;\n  border-bottom: 3px solid #111;\n  border-top: 3px solid #111; }\n\n.is-orange {\n  background: linear-gradient(109deg, #FF851B, #ffc86f); }\n\na.footer-social {\n  text-decoration: none;\n  width: 25%;\n  height: 100%;\n  line-height: 100%; }\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n  border-bottom: none; }\n\ni.fa {\n  width: 20;\n  height: 20; }\n\n.social-footer-span {\n  font-size: 2em; }\n\n.icon-container {\n  background-color: #FFF;\n  height: 25px;\n  justify-content: center;\n  align-items: center; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/footer.sass"],"names":[],"mappings":"AAEA;EACI,0BAHY;EAIZ,8BAA8B;EAC9B,2BAA2B,EAAG;;AAElC;EACI,sDAA2B,EAA6B;;AAE5D;EACI,sBAAsB;EACtB,WAAW;EACX,aAAa;EACb,kBAAkB,EAAG;;AAGzB;EACI,oBAAoB,EAAG;;AAE3B;EACI,UAAU;EACV,WAAW,EAAG;;AAElB;EACI,eAAe,EAAG;;AAEtB;EACI,uBAAuB;EACvB,aAAa;EACb,wBAAwB;EACxB,oBAAoB,EAAG","file":"footer.sass","sourcesContent":["$orange: #FF851B;\n\n.footer {\n    background-color: $orange;\n    border-bottom: 3px solid #111;\n    border-top: 3px solid #111; }\n\n.is-orange {\n    background: linear-gradient(109deg, $orange, #ffc86f); }\n\na.footer-social {\n    text-decoration: none;\n    width: 25%;\n    height: 100%;\n    line-height: 100%; }\n\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n    border-bottom: none; }\n\ni.fa {\n    width: 20;\n    height: 20; }\n\n.social-footer-span {\n    font-size: 2em; }\n\n.icon-container {\n    background-color: #FFF;\n    height: 25px;\n    justify-content: center;\n    align-items: center; }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
