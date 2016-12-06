@@ -12670,7 +12670,26 @@ var Contact = function (_Component) {
     _createClass(Contact, [{
         key: "render",
         value: function render() {
-            return _react2.default.createElement("div", { className: "hero-body" });
+            return _react2.default.createElement(
+                "div",
+                { "class": "container" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "columns" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "column is-half" },
+                        _react2.default.createElement("img", { src: "/images/mail.png", alt: "mail pic" })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "column is-half" },
+                        _react2.default.createElement("input", { type: "text" }),
+                        _react2.default.createElement("input", { type: "email" }),
+                        _react2.default.createElement("textarea", null)
+                    )
+                )
+            );
         }
     }]);
 
@@ -13129,7 +13148,50 @@ var Footer = function (_Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'hero-body' },
-                    _react2.default.createElement('div', { className: 'container' })
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'footer-wrapper' },
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'footer-social contact', href: '/contact' },
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'social-footer-span' },
+                                'Contact'
+                            ),
+                            _react2.default.createElement('i', { className: 'fa fa-envelope', 'aria-hidden': 'true' })
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'footer-social twitter', href: 'https://twitter.com/CJSampsonite' },
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'social-footer-span' },
+                                'Twitter'
+                            ),
+                            _react2.default.createElement('i', { className: 'fa fa-twitter-square', 'aria-hidden': 'true' })
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'footer-social github', href: 'https://github.com/cjsampson' },
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'social-footer-span' },
+                                'Github'
+                            ),
+                            _react2.default.createElement('i', { className: 'fa fa-github-square', 'aria-hidden': 'true' })
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { className: 'footer-social linkedin', href: 'https://www.linkedin.com/in/christopher-sampson-3891b7b7' },
+                            _react2.default.createElement(
+                                'span',
+                                { className: 'social-footer-span' },
+                                'LinkedIn'
+                            ),
+                            _react2.default.createElement('i', { className: 'fa fa-linkedin-square', 'aria-hidden': 'true' })
+                        )
+                    )
                 )
             );
         }
@@ -27916,7 +27978,7 @@ exports = module.exports = __webpack_require__(42)();
 
 
 // module
-exports.push([module.i, ".footer {\n  background-color: #FF851B;\n  border-bottom: 3px solid #111;\n  border-top: 3px solid #111; }\n\n.is-orange {\n  background: linear-gradient(109deg, #d9931f, #ffc86f); }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/footer.sass"],"names":[],"mappings":"AAEA;EACI,0BAHY;EAIZ,8BAA8B;EAC9B,2BAA2B,EAAG;;AAElC;EACI,sDAA2B,EAA6B","file":"footer.sass","sourcesContent":["$orange: #FF851B;\n\n.footer {\n    background-color: $orange;\n    border-bottom: 3px solid #111;\n    border-top: 3px solid #111; }\n\n.is-orange {\n    background: linear-gradient(109deg, #d9931f, #ffc86f); }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, ".footer {\n  background-color: #FF851B;\n  border-bottom: 3px solid #111;\n  border-top: 3px solid #111; }\n\n.is-orange {\n  background: linear-gradient(109deg, #d9931f, #ffc86f); }\n\n.footer-wrapper {\n  height: 100px;\n  border-top: 3px solid #FFF;\n  border-bottom: 3px solid #FFF;\n  display: flex; }\n\n.footer-wrapper.footer-social {\n  line-height: 50px; }\n\na.footer-social {\n  text-decoration: none;\n  width: 25%;\n  height: 100%;\n  background-color: indianred;\n  line-height: 100%; }\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n  border-bottom: none; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/footer.sass"],"names":[],"mappings":"AAEA;EACI,0BAHY;EAIZ,8BAA8B;EAC9B,2BAA2B,EAAG;;AAElC;EACI,sDAA2B,EAA6B;;AAE5D;EACI,cAAc;EACd,2BAA2B;EAC3B,8BAA8B;EAC9B,cAAc,EAAG;;AAErB;EACI,kBAAkB,EAAG;;AAEzB;EACI,sBAAsB;EACtB,WAAW;EACX,aAAa;EACb,4BAA4B;EAC5B,kBAAkB,EAAG;;AAGzB;EACI,oBAAoB,EAAG","file":"footer.sass","sourcesContent":["$orange: #FF851B;\n\n.footer {\n    background-color: $orange;\n    border-bottom: 3px solid #111;\n    border-top: 3px solid #111; }\n\n.is-orange {\n    background: linear-gradient(109deg, #d9931f, #ffc86f); }\n\n.footer-wrapper {\n    height: 100px;\n    border-top: 3px solid #FFF;\n    border-bottom: 3px solid #FFF;\n    display: flex; }\n\n.footer-wrapper.footer-social {\n    line-height: 50px; }\n\na.footer-social {\n    text-decoration: none;\n    width: 25%;\n    height: 100%;\n    background-color: indianred;\n    line-height: 100%; }\n\n\n.footer a:not(.icon), .footer a:visited:not(.icon) {\n    border-bottom: none; }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
@@ -27949,4 +28011,4 @@ if(false) {
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=app.js.mapMappingURL=app.js.map
+//# sourceMappingURL=app.js.map
