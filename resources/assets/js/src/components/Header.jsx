@@ -24,10 +24,6 @@ class Header extends Component {
                             <div className="nav-right nav-menu">
 
                                 <li className="header-list-item">
-                                    <Link activeClassName="is-active" className="header-name-link" to="about">About</Link>
-                                </li>
-
-                                <li className="header-list-item">
                                     <Link activeClassName="is-active" className="header-name-link" to="portfolio">Portfolio</Link>
                                 </li>
 
