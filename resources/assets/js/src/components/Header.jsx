@@ -22,7 +22,7 @@ class Header extends Component {
     }
 
     handleHamburgerClick = () => {
-        console.log('toggled');
+        console.log('toggled me');
         this.setState({ open: !this.state.open});
     }
     render() {
