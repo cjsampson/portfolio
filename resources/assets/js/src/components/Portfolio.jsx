@@ -29,7 +29,7 @@ export default class Portfolio extends Component {
                                                     <strong>Blueline Screening Source</strong> is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.
                                                 </p>
                                                 <div className="project-technologies">
-                                                    <p><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, Sequel Pro, NPM, Gulp, Vagrant</p>
+                                                    <p><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, AJAX, Datatables, jQuery, Sequel Pro, NPM, Gulp, Vagrant, Ansible</p>
                                                     <a href="#" className="is-flex github-container">
                                                         <i className="fa fa-github" aria-hidden="true"></i>
                                                         <span className="github-span">Private Repo</span>
@@ -63,7 +63,7 @@ export default class Portfolio extends Component {
                                                 </p>
 
                                                 <div className="project-technologies">
-                                                    <p><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, jQuery, AJAX, Datatables, Bulma Framework, NPM, Gulp, Homestead</p>
+                                                    <p><strong>Technologies used:</strong> Laravel Framework, SASS (CSS), jQuery, Bulma Framework, NPM, Gulp, Homestead</p>
                                                     <a href="#" className="is-flex github-container">
                                                         <i className="fa fa-github" aria-hidden="true"></i>
                                                         <span className="github-span">Private Repo</span>
@@ -135,6 +135,40 @@ export default class Portfolio extends Component {
                                                     <a href="https://github.com/cjsampson/Whack-a-Mole" className="is-flex github-container">
                                                         <i className="fa fa-github" aria-hidden="true"></i>
                                                         <span className="github-span">Github</span>
+                                                    </a>
+                                                </div>
+                                            </div>                  
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div className="box">
+                            <article className="media">
+
+                                <div className="columns">
+
+                                    <div className="column is-5 is-flex image-column">
+                                        <div className="media-left is-flex">
+                                            <figure className="image-container">
+                                                <img src="/images/paramount.png" alt="Image" />
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                    <div className="column is-7">
+                                        <div className="media-content is-flex media-flex">
+                                            <div className="content is-flex">
+                                                <p className="project-description">
+                                                    <strong>Paramount Accounting</strong> is an accounting software to provide efficiency to a local Taxing business.  Roles performed for this project were to implement BDD using the Selenium Driver and Behat to provide Behavioral test in the browser.  Also a user-restriction feature was implemented to restrict user's from accesing certain features of the software.
+                                                </p>
+                                                
+                                                <div className="project-technologies">
+                                                    <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, jQuery, AJAX, Behat, BDD, Mink Extension, NPM, Bootstrap</p>
+                                                    <a href="#" className="is-flex github-container">
+                                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                                        <span className="github-span">Private Repo</span>
                                                     </a>
                                                 </div>
                                             </div>                  

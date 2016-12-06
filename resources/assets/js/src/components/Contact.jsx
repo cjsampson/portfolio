@@ -7,14 +7,14 @@ export default class Contact extends Component {
         return (
             <div className="container">
                 <div className="columns">
-                    <div className="column is-one-quarter">
+                    <div className="column is-3">
                         <div className="content is-medium">
                             <h1 className="has-text-centered">Hey There!</h1>
                             <p>If you are looking to partner up on a project or would like to just say hello, drop me a quick line so we can chat :)</p>
                             <p>All types of feedback are greatly appreciated!</p>
                         </div>
                     </div>                    
-                    <div className="column is-one-quarter is-flex-mobile mail">
+                    <div className="column is-2 is-flex-mobile mail">
                         <figure className="image is-128x128">
                             <img src="/images/mail.png" alt="mail pic" />                        
                         </figure>

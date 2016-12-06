@@ -8589,7 +8589,7 @@ var Contact = function (_Component) {
                     { className: 'columns' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'column is-one-quarter' },
+                        { className: 'column is-3' },
                         _react2.default.createElement(
                             'div',
                             { className: 'content is-medium' },
@@ -8612,7 +8612,7 @@ var Contact = function (_Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'column is-one-quarter is-flex-mobile mail' },
+                        { className: 'column is-2 is-flex-mobile mail' },
                         _react2.default.createElement(
                             'figure',
                             { className: 'image is-128x128' },
@@ -27099,7 +27099,7 @@ var Portfolio = function (_Component) {
                                                             null,
                                                             'Technologies used:'
                                                         ),
-                                                        ' Laravel Framework, Twitter Bootstrap, jQuery, Sequel Pro, NPM, Gulp, Vagrant'
+                                                        ' Laravel Framework, Twitter Bootstrap, AJAX, Datatables, jQuery, Sequel Pro, NPM, Gulp, Vagrant, Ansible'
                                                     ),
                                                     _react2.default.createElement(
                                                         'a',
@@ -27170,7 +27170,7 @@ var Portfolio = function (_Component) {
                                                             null,
                                                             'Technologies used:'
                                                         ),
-                                                        ' Laravel Framework, Twitter Bootstrap, jQuery, AJAX, Datatables, Bulma Framework, NPM, Gulp, Homestead'
+                                                        ' Laravel Framework, SASS (CSS), jQuery, Bulma Framework, NPM, Gulp, Homestead'
                                                     ),
                                                     _react2.default.createElement(
                                                         'a',
@@ -27322,6 +27322,77 @@ var Portfolio = function (_Component) {
                                                             'span',
                                                             { className: 'github-span' },
                                                             'Github'
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'box' },
+                            _react2.default.createElement(
+                                'article',
+                                { className: 'media' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'columns' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'column is-5 is-flex image-column' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'media-left is-flex' },
+                                            _react2.default.createElement(
+                                                'figure',
+                                                { className: 'image-container' },
+                                                _react2.default.createElement('img', { src: '/images/paramount.png', alt: 'Image' })
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'column is-7' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'media-content is-flex media-flex' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'content is-flex' },
+                                                _react2.default.createElement(
+                                                    'p',
+                                                    { className: 'project-description' },
+                                                    _react2.default.createElement(
+                                                        'strong',
+                                                        null,
+                                                        'Paramount Accounting'
+                                                    ),
+                                                    ' is an accounting software to provide efficiency to a local Taxing business.  Roles performed for this project were to implement BDD using the Selenium Driver and Behat to provide Behavioral test in the browser.  Also a user-restriction feature was implemented to restrict user\'s from accesing certain features of the software.'
+                                                ),
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { className: 'project-technologies' },
+                                                    _react2.default.createElement(
+                                                        'p',
+                                                        null,
+                                                        _react2.default.createElement(
+                                                            'strong',
+                                                            null,
+                                                            'Technologies used:'
+                                                        ),
+                                                        ' HTML, CSS, JavaScript, jQuery, AJAX, Behat, BDD, Mink Extension, NPM, Bootstrap'
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: '#', className: 'is-flex github-container' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            { className: 'github-span' },
+                                                            'Private Repo'
                                                         )
                                                     )
                                                 )
