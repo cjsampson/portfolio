@@ -9,7 +9,7 @@ export default class Contact extends Component {
                 <div className="columns">
                     <div className="column is-3">
                         <div className="content is-medium">
-                            <h1 className="has-text-centered">Hey There!</h1>
+                            <h1 className="has-text-centered greeting"><strong>Hey There!</strong></h1>
                             <p>If you are looking to partner up on a project or would like to just say hello, drop me a quick line so we can chat :)</p>
                             <p>All types of feedback are greatly appreciated!</p>
                         </div>
