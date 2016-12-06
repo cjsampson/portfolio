@@ -41,7 +41,7 @@ class Footer extends Component {
                                 <div className="icon-container is-flex">
                                     <a className="footer-social is-flex linkedin" href="https://www.linkedin.com/in/christopher-sampson-3891b7b7">
                                         <span className="social-footer-span">LinkedIn</span>
-                                        <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                                        <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
                                     </a>
                                 </div>
                             </div>
