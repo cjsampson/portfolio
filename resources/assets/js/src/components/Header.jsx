@@ -31,6 +31,10 @@ class Header extends Component {
                                 </li>
 
                                 <li className="header-list-item">
+                                    <Link activeClassName="is-active" className="header-name-link" to="resume">Resume</Link>
+                                </li>
+
+                                <li className="header-list-item">
                                     <Link activeClassName="is-active" className="header-name-link" to="contact">Contact</Link>
                                 </li>
                             </div>
