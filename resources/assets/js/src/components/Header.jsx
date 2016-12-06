@@ -24,7 +24,7 @@ class Header extends Component {
                         <div className="container">
                             <div className="nav-left">                                
                                 <li className="nav-item">
-                                    <Link className="header-name-brand" to="/home">CJ Sampson</Link>
+                                    <Link className="header-name-brand" to="/">CJ Sampson</Link>
                                 </li>                                
                             </div>
                             <span className="nav-toggle">
