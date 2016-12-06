@@ -11,7 +11,7 @@ import Portfolio from './components/Portfolio';
 import NotFound from './components/NotFound';
 
 const Index = () => (
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
         <Route path="/" component={App}>
             <Route path="/resume" component={Resume}/>
             <Route path="/about" component={About}/>

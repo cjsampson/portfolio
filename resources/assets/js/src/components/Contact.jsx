@@ -14,12 +14,12 @@ export default class Contact extends Component {
                             <p>All types of feedback are greatly appreciated!</p>
                         </div>
                     </div>                    
-                    <div className="column is-2 is-flex-mobile mail">
+                    <div className="column is-1 is-offset-1 is-flex-mobile mail">
                         <figure className="image is-128x128">
                             <img src="/images/mail.png" alt="mail pic" />                        
                         </figure>
                     </div>
-                    <div className="column is-half is-offset-1" id="contact-form">
+                    <div className="column is-5 is-offset-2" id="contact-form">
                         <div className="box">
                             <label className="label">Name</label>
                             <p className="control">

@@ -8523,7 +8523,7 @@ var App = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'someclass' },
+                null,
                 _react2.default.createElement(_Header2.default, null),
                 _react2.default.createElement(
                     'div',
@@ -8612,7 +8612,7 @@ var Contact = function (_Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'column is-2 is-flex-mobile mail' },
+                        { className: 'column is-1 is-offset-1 is-flex-mobile mail' },
                         _react2.default.createElement(
                             'figure',
                             { className: 'image is-128x128' },
@@ -8621,7 +8621,7 @@ var Contact = function (_Component) {
                     ),
                     _react2.default.createElement(
                         'div',
-                        { className: 'column is-half is-offset-1', id: 'contact-form' },
+                        { className: 'column is-5 is-offset-2', id: 'contact-form' },
                         _react2.default.createElement(
                             'div',
                             { className: 'box' },
@@ -26983,7 +26983,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Index = function Index() {
     return _react2.default.createElement(
         _reactRouter.Router,
-        { history: _reactRouter.hashHistory },
+        { history: _reactRouter.browserHistory },
         _react2.default.createElement(
             _reactRouter.Route,
             { path: '/', component: _App2.default },
@@ -28159,6 +28159,8 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
+__webpack_require__(256);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28181,8 +28183,151 @@ var Resume = function (_Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                null,
-                'Resume'
+                { className: 'container' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'columns' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'column is-8 is-offset-2 resume' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'content' },
+                            _react2.default.createElement(
+                                'section',
+                                { 'class': 'section' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'heading' },
+                                    _react2.default.createElement(
+                                        'figure',
+                                        { className: 'image is-128x128 resume-pic' },
+                                        _react2.default.createElement('img', { src: '/images/cj.jpg' })
+                                    ),
+                                    _react2.default.createElement(
+                                        'p',
+                                        { className: 'professional-title' },
+                                        'Software Developer'
+                                    ),
+                                    _react2.default.createElement(
+                                        'p',
+                                        { className: 'residence' },
+                                        'Salt Lake City, Utah'
+                                    )
+                                )
+                            ),
+                            _react2.default.createElement('hr', null),
+                            _react2.default.createElement(
+                                'section',
+                                { className: 'section' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'content' },
+                                    _react2.default.createElement(
+                                        'h2',
+                                        null,
+                                        'Work Experience'
+                                    ),
+                                    _react2.default.createElement(
+                                        'h5',
+                                        { className: 'title' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            { className: 'job-title' },
+                                            'SLC Dev Shop'
+                                        ),
+                                        ' ',
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            _react2.default.createElement(
+                                                'strong',
+                                                null,
+                                                'May 2016 - Dec 2016'
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        'Full-stack Web Developer.  Developed a wide variety of features ranging from the back and front end.  On multiple applications, I was tasked with Behavior Driven Development using Behat, Selenium Driver, and the Mink Extension for PHP.  Responsible for maintenance of applications, and was given the responsibilty to help our overseas developers with guidance and teaching.'
+                                    ),
+                                    _react2.default.createElement('br', null),
+                                    _react2.default.createElement(
+                                        'h5',
+                                        { className: 'title' },
+                                        _react2.default.createElement(
+                                            'span',
+                                            { className: 'job-title' },
+                                            'Freelance Web Developer'
+                                        ),
+                                        ' ',
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            _react2.default.createElement(
+                                                'strong',
+                                                null,
+                                                'July 2015 - Dec 2015'
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        'Worked on different applications using Wordpress and PHP for the backend.  Developed a fantasy football application using a multitude of widgets and UI components.'
+                                    ),
+                                    _react2.default.createElement('hr', null),
+                                    _react2.default.createElement(
+                                        'h2',
+                                        null,
+                                        'Education'
+                                    ),
+                                    _react2.default.createElement(
+                                        'h5',
+                                        null,
+                                        _react2.default.createElement(
+                                            'span',
+                                            { className: 'education' },
+                                            'Codeup, Software Development Bootcamp'
+                                        ),
+                                        ' ',
+                                        _react2.default.createElement(
+                                            'span',
+                                            null,
+                                            _react2.default.createElement(
+                                                'strong',
+                                                null,
+                                                'Jan 2016 - May 2016'
+                                            )
+                                        ),
+                                        ' ',
+                                        _react2.default.createElement(
+                                            'span',
+                                            { className: 'education-location' },
+                                            'San Antonio, TX'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        'Full-stack web development training school. Over 700 hours of schooling including in-class plus study sessions.'
+                                    ),
+                                    _react2.default.createElement(
+                                        'p',
+                                        null,
+                                        _react2.default.createElement(
+                                            'strong',
+                                            null,
+                                            'Technologies learned:'
+                                        ),
+                                        ' HTML, CSS, JavaScript, PHP, Laravel, Apache, Linux'
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
             );
         }
     }]);
@@ -28201,7 +28346,7 @@ exports = module.exports = __webpack_require__(245)();
 
 
 // module
-exports.push([module.i, "#contact-form {\n  background-color: #ffc66c;\n  border-radius: 5px; }\n\n#sendbutton {\n  background-color: #ffc66c; }\n\n.input:active, .input:focus, .input.is-active,\n.textarea:active, .textarea:focus, .textarea.is-active {\n  border-color: #ffc66c; }\n\n.is-flex-mobile.mail {\n  justify-content: center; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/contact.sass"],"names":[],"mappings":"AAAA;EACI,0BAA0B;EAC1B,mBAAmB,EAAG;;AAE1B;EACI,0BAA0B,EAAG;;AAEjC;;EAEI,sBAAsB,EAAG;;AAE7B;EACI,wBAAwB,EAAG","file":"contact.sass","sourcesContent":["#contact-form {\n    background-color: #ffc66c;\n    border-radius: 5px; }\n\n#sendbutton {\n    background-color: #ffc66c; }\n\n.input:active, .input:focus, .input.is-active,\n.textarea:active, .textarea:focus, .textarea.is-active {\n    border-color: #ffc66c; }\n\n.is-flex-mobile.mail {\n    justify-content: center; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, "#contact-form {\n  background-color: #ffc66c;\n  border-radius: 5px; }\n\n#sendbutton {\n  background-color: #ffc66c; }\n\n.input:active, .input:focus, .input.is-active,\n.textarea:active, .textarea:focus, .textarea.is-active {\n  border-color: #ffc66c; }\n\n.is-flex-mobile.mail {\n  justify-content: center;\n  align-items: center; }\n\n.mail {\n  height: 100%; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/contact.sass"],"names":[],"mappings":"AAAA;EACI,0BAA0B;EAC1B,mBAAmB,EAAG;;AAE1B;EACI,0BAA0B,EAAG;;AAEjC;;EAEI,sBAAsB,EAAG;;AAE7B;EACI,wBAAwB;EACxB,oBAAoB,EAAG;;AAE3B;EACI,aAAa,EAAG","file":"contact.sass","sourcesContent":["#contact-form {\n    background-color: #ffc66c;\n    border-radius: 5px; }\n\n#sendbutton {\n    background-color: #ffc66c; }\n\n.input:active, .input:focus, .input.is-active,\n.textarea:active, .textarea:focus, .textarea.is-active {\n    border-color: #ffc66c; }\n\n.is-flex-mobile.mail {\n    justify-content: center;\n    align-items: center; }\n\n.mail {\n    height: 100%; }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
@@ -28224,6 +28369,46 @@ if(false) {
 	if(!content.locals) {
 		module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./contact.sass", function() {
 			var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./contact.sass");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ },
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(245)();
+// imports
+
+
+// module
+exports.push([module.i, ".resume {\n  margin-top: 25px;\n  border: 2px solid #111;\n  background-color: #fff;\n  min-height: 700px; }\n\n.resume-pic {\n  border-radius: 4px; }\n\n.professional-title {\n  margin-top: 10px; }\n\n.job-title {\n  text-decoration: underline; }\n\n.education {\n  text-decoration: underline; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/resume.sass"],"names":[],"mappings":"AAAA;EACI,iBAAiB;EACjB,uBAAuB;EACvB,uBAAuB;EACvB,kBAAkB,EAAG;;AAEzB;EACI,mBAAmB,EAAG;;AAE1B;EACI,iBAAiB,EAAG;;AAExB;EACI,2BAA2B,EAAG;;AAElC;EACI,2BAA2B,EAAG","file":"resume.sass","sourcesContent":[".resume {\n    margin-top: 25px;\n    border: 2px solid #111;\n    background-color: #fff;\n    min-height: 700px; }\n\n.resume-pic {\n    border-radius: 4px; }\n\n.professional-title {\n    margin-top: 10px; }\n\n.job-title {\n    text-decoration: underline; }\n\n.education {\n    text-decoration: underline; }\n"],"sourceRoot":"webpack://"}]);
+
+// exports
+
+
+/***/ },
+/* 256 */
+/***/ function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(255);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(243)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./resume.sass", function() {
+			var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./resume.sass");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
