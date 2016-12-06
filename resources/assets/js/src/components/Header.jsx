@@ -5,6 +5,17 @@ import { Link } from 'react-router';
 import '../../../sass/main.sass';
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            open: false
+        }
+    }
+
+    handleHamburgerClick = () => {
+
+    }
     render() {
         return (
             <section className="hero is-orange is-bold is-medium">
@@ -13,7 +24,7 @@ class Header extends Component {
                         <div className="container">
                             <div className="nav-left">                                
                                 <li className="nav-item">
-                                    <Link className="header-name-brand" to="/">CJ Sampson</Link>
+                                    <Link className="header-name-brand" to="/home">CJ Sampson</Link>
                                 </li>                                
                             </div>
                             <span className="nav-toggle">

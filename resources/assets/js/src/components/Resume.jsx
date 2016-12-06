@@ -9,7 +9,7 @@ export default class Resume extends Component {
                 <div className="columns">
                     <div className="column is-8 is-offset-2 resume">
                         <div className="content">
-                            <section class="section">   
+                            <section className="section">   
                                 <div className="heading">
                                     <figure className="image is-128x128 resume-pic">
                                         <img src="/images/cj.jpg" />

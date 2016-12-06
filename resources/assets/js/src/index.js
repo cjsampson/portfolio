@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, browserHistory, hashHistory } from 'react-ro
 
 
 import App from './components/App';
-import Home from './components/Home';
+import About from './components/About';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
@@ -13,11 +13,11 @@ import NotFound from './components/NotFound';
 const Index = () => (
     <Router history={browserHistory}>
         <Route path="/" component={App}>
-            <Route path="/resume" component={Home}/>
+            <IndexRoute component={About}/>
             <Route path="/resume" component={Resume}/>
             <Route path="/contact" component={Contact}/>
             <Route path="/portfolio" component={Portfolio}/>
-            <Route path="*" component={NotFound}/>
+            <Route path="*" to={"/"}/>
         </Route>
     </Router>
 )
