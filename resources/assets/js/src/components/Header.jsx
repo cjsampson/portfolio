@@ -6,8 +6,11 @@ import '../../../sass/main.sass';
 
 const ToggledNav = () => {
     return (
-        <div>
-            Toggled Nav
+        <div className="nav-menu nav-right is-active">
+            <Link className="nav-item dropdown-item" to="/">Home</Link>
+            <Link className="nav-item dropdown-item" to="portfolio">Portfolio</Link>
+            <Link className="nav-item dropdown-item" to="resume">Resume</Link>
+            <Link className="nav-item dropdown-item" to="contact">Contact</Link>
         </div>
     );
 }
