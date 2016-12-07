@@ -9,7 +9,7 @@ export default class Portfolio extends Component {
                 <div className="columns">
                     <div className="column is-two-thirds is-offset-2">
 
-                        <div className="box">
+                        <div className="box portfolio">
                             <article className="media">
 
                                 <div className="columns">
@@ -42,7 +42,7 @@ export default class Portfolio extends Component {
                             </article>
                         </div>
 
-                        <div className="box">
+                        <div className="box portfolio">
                             <article className="media">
 
                                 <div className="columns">
@@ -76,7 +76,7 @@ export default class Portfolio extends Component {
                             </article>
                         </div>
 
-                        <div className="box">
+                        <div className="box portfolio">
                             <article className="media">
 
                                 <div className="columns">
@@ -110,7 +110,7 @@ export default class Portfolio extends Component {
                             </article>
                         </div>
 
-                        <div className="box">
+                        <div className="box portfolio">
                             <article className="media">
 
                                 <div className="columns">
@@ -144,7 +144,7 @@ export default class Portfolio extends Component {
                             </article>
                         </div>
 
-                        <div className="box">
+                        <div className="box portfolio">
                             <article className="media">
 
                                 <div className="columns">
