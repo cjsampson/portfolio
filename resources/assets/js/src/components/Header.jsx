@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 
 import { Link } from 'react-router';
 
@@ -6,11 +7,11 @@ import '../../../sass/main.sass';
 
 const ToggledNav = () => {
     return (
-        <div className="nav-menu nav-right is-active">
-            <Link className="nav-item dropdown-item" to="/">Home</Link>
-            <Link className="nav-item dropdown-item" to="portfolio">Portfolio</Link>
-            <Link className="nav-item dropdown-item" to="resume">Resume</Link>
-            <Link className="nav-item dropdown-item" to="contact">Contact</Link>
+        <div className="nav-menu nav-right">
+            <Link className="nav-item dropdown-item" to="/" onClick={this.handleHamburgerClick}>Home</Link>
+            <Link className="nav-item dropdown-item" to="portfolio" onClick={this.handleHamburgerClick}>Portfolio</Link>
+            <Link className="nav-item dropdown-item" to="resume" onClick={this.handleHamburgerClick}>Resume</Link>
+            <Link className="nav-item dropdown-item" to="contact" onClick={this.handleHamburgerClick}>Contact</Link>
         </div>
     );
 }
@@ -24,10 +25,16 @@ class Header extends Component {
         }
     }
 
+    hamburgerClassName = () => 
+        classNames({
+            'is-active':  this.state.open,
+            'nav-toggle': true
+        })
+
     handleHamburgerClick = () => {
-        console.log('toggled me');
         this.setState({ open: !this.state.open});
     }
+
     render() {
         return (
             <section className="hero is-orange is-bold is-medium">
@@ -40,13 +47,13 @@ class Header extends Component {
                                 </li>                                
                             </div>
                             { this.state.open ? <ToggledNav /> : null }
-                            <span className="nav-toggle" onClick={this.handleHamburgerClick}>
+                            <span className={this.hamburgerClassName()} onClick={this.handleHamburgerClick}>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </span>
                             
-                            <div className="nav-right nav-menu">
+                            <div className="is-active nav-right nav-menu">
 
                                 <li className="header-list-item">
                                     <Link activeClassName="is-active" className="header-name-link" to="portfolio">Portfolio</Link>
