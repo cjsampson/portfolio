@@ -5,16 +5,16 @@ import { Link } from 'react-router';
 
 import '../../../sass/main.sass';
 
-const ToggledNav = () => {
-    return (
-        <div className="nav-menu nav-right">
-            <Link className="nav-item dropdown-item" to="/" onClick={this.handleHamburgerClick}>Home</Link>
-            <Link className="nav-item dropdown-item" to="portfolio" onClick={this.handleHamburgerClick}>Portfolio</Link>
-            <Link className="nav-item dropdown-item" to="resume" onClick={this.handleHamburgerClick}>Resume</Link>
-            <Link className="nav-item dropdown-item" to="contact" onClick={this.handleHamburgerClick}>Contact</Link>
-        </div>
-    );
-}
+// const ToggledNav = () => {
+//     return (
+//         <div className="nav-menu nav-right">
+//             <Link className="nav-item dropdown-item" to="/" onClick={this.handleHamburgerClick}>Home</Link>
+//             <Link className="nav-item dropdown-item" to="portfolio" onClick={this.handleHamburgerClick}>Portfolio</Link>
+//             <Link className="nav-item dropdown-item" to="resume" onClick={this.handleHamburgerClick}>Resume</Link>
+//             <Link className="nav-item dropdown-item" to="contact" onClick={this.handleHamburgerClick}>Contact</Link>
+//         </div>
+//     );
+// }
 
 class Header extends Component {
     constructor(props) {
@@ -25,10 +25,17 @@ class Header extends Component {
         }
     }
 
-    hamburgerClassName = () => 
+    hamburgerClassNames = () => 
         classNames({
             'is-active':  this.state.open,
             'nav-toggle': true
+        })
+
+    dropDownClassNames = () => 
+        classNames({
+            'nav-menu': true,
+            'nav-right': true,
+            'is-active': this.state.open
         })
 
     handleHamburgerClick = () => {
@@ -46,25 +53,31 @@ class Header extends Component {
                                     <Link className="header-name-brand" to="/">CJ Sampson</Link>
                                 </li>                                
                             </div>
-                            { this.state.open ? <ToggledNav /> : null }
-                            <span className={this.hamburgerClassName()} onClick={this.handleHamburgerClick}>
+                            
+                            <span className={this.hamburgerClassNames()} onClick={this.handleHamburgerClick}>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </span>
                             
-                            <div className="is-active nav-right nav-menu">
-
+                            <div className={this.dropDownClassNames()}>
                                 <li className="header-list-item">
-                                    <Link activeClassName="is-active" className="header-name-link" to="portfolio">Portfolio</Link>
+                                    <Link activeClassName="is-active" 
+                                          className="header-name-link" 
+                                          to="portfolio"
+                                          onClick={this.handleHamburgerClick}
+                                    >
+                                        Portfolio
+                                    </Link>
                                 </li>
 
                                 <li className="header-list-item">
-                                    <Link activeClassName="is-active" className="header-name-link" to="resume">Resume</Link>
+                                    <Link activeClassName="is-active" className="header-name-link" to="resume"
+                                    onClick={this.handleHamburgerClick}>Resume</Link>
                                 </li>
 
                                 <li className="header-list-item">
-                                    <Link activeClassName="is-active" className="header-name-link" to="contact">Contact</Link>
+                                    <Link activeClassName="is-active" className="header-name-link" to="contact" onClick={this.handleHamburgerClick}>Contact</Link>
                                 </li>
                             </div>
                         </div>
