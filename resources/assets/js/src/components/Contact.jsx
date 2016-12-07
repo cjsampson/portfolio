@@ -10,7 +10,7 @@ export default class Contact extends Component {
                     <div className="column is-3">
                         <div className="content is-medium">
                             <h1 className="has-text-centered greeting"><strong>Hey There!</strong></h1>
-                            <p>If you are looking to partner up on a project or would like to just say hello, drop me a quick line so we can chat :)</p>
+                            <p>If you are looking to partner up on a project or would like to just say hello, drop me a quick line so we can chat</p>
                             <p>All types of feedback are greatly appreciated!</p>
                         </div>
                     </div>                    
@@ -33,7 +33,7 @@ export default class Contact extends Component {
 
                             <label className="label">Do you like the site?</label>
                             <p className="control">
-                                <textarea className="textarea" type="text" placeholder="Shoot me a line! I'd love to hear from you :) ">
+                                <textarea className="textarea" type="text" placeholder="Shoot me a line! I'd love to hear from you">
                                 </textarea>
                             </p>                          
 
