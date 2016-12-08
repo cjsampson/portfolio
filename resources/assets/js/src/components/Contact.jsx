@@ -3,6 +3,27 @@ import React, { Component } from 'react';
 import '../../../sass/contact.sass';
 
 export default class Contact extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: '',
+            email: '',
+            reason: ''
+        }
+    }
+
+    handleNameChange(event) {
+        console.log(event.target.value);
+    }
+
+    handleEmailChange(event) {
+        console.log(event.target.value);
+    }
+
+    handleReasonChange(event) {
+        console.log(event.target.value);
+    }
     render(){
         return (
             <div className="container">
@@ -23,17 +44,35 @@ export default class Contact extends Component {
                         <div className="box">
                             <label className="label">Name</label>
                             <p className="control">
-                                <input className="input" type="text" placeholder="Name:" />
+                                <input 
+                                    className="input" 
+                                    type="text" 
+                                    placeholder="Name:"
+                                    onChange={this.handleNameChange}
+                                    value={this.state.name}
+                                />
                             </p>
                           
                             <label className="label">Email</label>
                             <p className="control">
-                                <input className="input" type="text" placeholder="Email:" />
+                                <input 
+                                    className="input" 
+                                    type="text" 
+                                    placeholder="Email:"
+                                    onChange={this.handleEmailChange}                    
+                                    value={this.state.email}
+                                />
                             </p>
 
                             <label className="label">Do you like the site?</label>
                             <p className="control">
-                                <textarea className="textarea" type="text" placeholder="Shoot me a line! I'd love to hear from you">
+                                <textarea 
+                                    className="textarea" 
+                                    type="text" 
+                                    placeholder="Shoot me a line! I'd love to hear from you"
+                                    onChange={this.handleReasonChange}
+                                    value={this.state.reason}
+                                >
                                 </textarea>
                             </p>                          
 

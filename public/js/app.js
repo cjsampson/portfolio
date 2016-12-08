@@ -12648,13 +12648,35 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Contact = function (_Component) {
     _inherits(Contact, _Component);
 
-    function Contact() {
+    function Contact(props) {
         _classCallCheck(this, Contact);
 
-        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
+
+        _this.state = {
+            name: '',
+            email: '',
+            reason: ''
+        };
+        return _this;
     }
 
     _createClass(Contact, [{
+        key: 'handleNameChange',
+        value: function handleNameChange(event) {
+            console.log(event.target.value);
+        }
+    }, {
+        key: 'handleEmailChange',
+        value: function handleEmailChange(event) {
+            console.log(event.target.value);
+        }
+    }, {
+        key: 'handleReasonChange',
+        value: function handleReasonChange(event) {
+            console.log(event.target.value);
+        }
+    }, {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -12713,7 +12735,13 @@ var Contact = function (_Component) {
                             _react2.default.createElement(
                                 'p',
                                 { className: 'control' },
-                                _react2.default.createElement('input', { className: 'input', type: 'text', placeholder: 'Name:' })
+                                _react2.default.createElement('input', {
+                                    className: 'input',
+                                    type: 'text',
+                                    placeholder: 'Name:',
+                                    onChange: this.handleNameChange,
+                                    value: this.state.name
+                                })
                             ),
                             _react2.default.createElement(
                                 'label',
@@ -12723,7 +12751,13 @@ var Contact = function (_Component) {
                             _react2.default.createElement(
                                 'p',
                                 { className: 'control' },
-                                _react2.default.createElement('input', { className: 'input', type: 'text', placeholder: 'Email:' })
+                                _react2.default.createElement('input', {
+                                    className: 'input',
+                                    type: 'text',
+                                    placeholder: 'Email:',
+                                    onChange: this.handleEmailChange,
+                                    value: this.state.email
+                                })
                             ),
                             _react2.default.createElement(
                                 'label',
@@ -12733,7 +12767,13 @@ var Contact = function (_Component) {
                             _react2.default.createElement(
                                 'p',
                                 { className: 'control' },
-                                _react2.default.createElement('textarea', { className: 'textarea', type: 'text', placeholder: 'Shoot me a line! I\'d love to hear from you' })
+                                _react2.default.createElement('textarea', {
+                                    className: 'textarea',
+                                    type: 'text',
+                                    placeholder: 'Shoot me a line! I\'d love to hear from you',
+                                    onChange: this.handleReasonChange,
+                                    value: this.state.reason
+                                })
                             ),
                             _react2.default.createElement(
                                 'p',
