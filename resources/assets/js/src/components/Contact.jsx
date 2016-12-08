@@ -11,19 +11,24 @@ export default class Contact extends Component {
             email: '',
             reason: ''
         }
+
     }
 
-    handleNameChange(event) {
+    handleNameChange = (event) => {
         console.log(event.target.value);
+        this.setState({name: event.target.value})
     }
 
-    handleEmailChange(event) {
+    handleEmailChange = (event) => {
         console.log(event.target.value);
+        this.setState(email: event.target.value})
     }
 
-    handleReasonChange(event) {
+    handleReasonChange = (event) => {
         console.log(event.target.value);
+        this.setState({reason: event.target.value })
     }
+    
     render(){
         return (
             <div className="container">
