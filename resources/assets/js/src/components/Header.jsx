@@ -5,16 +5,6 @@ import { Link } from 'react-router';
 
 import '../../../sass/main.sass';
 
-// const ToggledNav = () => {
-//     return (
-//         <div className="nav-menu nav-right">
-//             <Link className="nav-item dropdown-item" to="/" onClick={this.handleHamburgerClick}>Home</Link>
-//             <Link className="nav-item dropdown-item" to="portfolio" onClick={this.handleHamburgerClick}>Portfolio</Link>
-//             <Link className="nav-item dropdown-item" to="resume" onClick={this.handleHamburgerClick}>Resume</Link>
-//             <Link className="nav-item dropdown-item" to="contact" onClick={this.handleHamburgerClick}>Contact</Link>
-//         </div>
-//     );
-// }
 
 class Header extends Component {
     constructor(props) {
