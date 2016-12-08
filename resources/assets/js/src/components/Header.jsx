@@ -62,12 +62,23 @@ class Header extends Component {
                                 </li>
 
                                 <li className="header-list-item">
-                                    <Link activeClassName="is-active" className="header-name-link" to="resume"
-                                    onClick={this.handleHamburgerClick}>Resume</Link>
+                                    <Link activeClassName="is-active" 
+                                          className="header-name-link" 
+                                          to="resume"
+                                          onClick={this.handleHamburgerClick}
+                                    >
+                                        Resume
+                                    </Link>
                                 </li>
 
                                 <li className="header-list-item">
-                                    <Link activeClassName="is-active" className="header-name-link" to="contact" onClick={this.handleHamburgerClick}>Contact</Link>
+                                    <Link activeClassName="is-active" 
+                                          className="header-name-link" 
+                                          to="contact" 
+                                          onClick={this.handleHamburgerClick}
+                                    >
+                                        Contact
+                                    </Link>
                                 </li>
                             </div>
                         </div>
