@@ -21,14 +21,18 @@ export default class Contact extends Component {
 
     handleEmailChange = (event) => {
         console.log(event.target.value);
-        this.setState(email: event.target.value})
+        this.setState({email: event.target.value})
     }
 
     handleReasonChange = (event) => {
         console.log(event.target.value);
         this.setState({reason: event.target.value })
     }
-    
+
+    handleSubmit = (event) => {
+        
+    }
+
     render(){
         return (
             <div className="container">
@@ -82,7 +86,13 @@ export default class Contact extends Component {
                             </p>                          
 
                             <p className="control">
-                                <button className="button send" id="sendbutton">Send</button>
+                                <button 
+                                    className="button send" 
+                                    id="sendbutton"
+                                    onClick={this.handleSubmit}
+                                >
+                                    Send
+                                </button>
                             </p>
                         </div>
                     </div>

@@ -12619,9 +12619,189 @@ exports.default = App;
 
 /***/ },
 /* 114 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: SyntaxError: Unexpected token, expected , (24:47)\n\n\u001b[0m \u001b[90m 22 | \u001b[39m    handleEmailChange \u001b[33m=\u001b[39m (event) \u001b[33m=>\u001b[39m {\n \u001b[90m 23 | \u001b[39m        console\u001b[33m.\u001b[39mlog(event\u001b[33m.\u001b[39mtarget\u001b[33m.\u001b[39mvalue)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 | \u001b[39m        \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msetState(email\u001b[33m:\u001b[39m event\u001b[33m.\u001b[39mtarget\u001b[33m.\u001b[39mvalue})\n \u001b[90m    | \u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 | \u001b[39m    }\n \u001b[90m 26 | \u001b[39m\n \u001b[90m 27 | \u001b[39m    handleReasonChange \u001b[33m=\u001b[39m (event) \u001b[33m=>\u001b[39m {\u001b[0m\n");
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(252);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = function (_Component) {
+    _inherits(Contact, _Component);
+
+    function Contact(props) {
+        _classCallCheck(this, Contact);
+
+        var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
+
+        _this.handleNameChange = function (event) {
+            console.log(event.target.value);
+            _this.setState({ name: event.target.value });
+        };
+
+        _this.handleEmailChange = function (event) {
+            console.log(event.target.value);
+            _this.setState({ email: event.target.value });
+        };
+
+        _this.handleReasonChange = function (event) {
+            console.log(event.target.value);
+            _this.setState({ reason: event.target.value });
+        };
+
+        _this.handleSubmit = function (event) {};
+
+        _this.state = {
+            name: '',
+            email: '',
+            reason: ''
+        };
+
+        return _this;
+    }
+
+    _createClass(Contact, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'container' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'columns' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'column is-3' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'content is-medium' },
+                            _react2.default.createElement(
+                                'h1',
+                                { className: 'has-text-centered greeting' },
+                                _react2.default.createElement(
+                                    'strong',
+                                    null,
+                                    'Hey There!'
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'If you are looking to partner up on a project or would like to just say hello, drop me a quick line so we can chat.'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'All types of feedback are greatly appreciated!'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'column is-1 is-offset-1 is-flex-mobile mail' },
+                        _react2.default.createElement(
+                            'figure',
+                            { className: 'image is-128x128' },
+                            _react2.default.createElement('img', { src: '/images/mail.png', alt: 'mail pic' })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'column is-5 is-offset-2', id: 'contact-form' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'box' },
+                            _react2.default.createElement(
+                                'label',
+                                { className: 'label' },
+                                'Name'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'control' },
+                                _react2.default.createElement('input', {
+                                    className: 'input',
+                                    type: 'text',
+                                    placeholder: 'Name:',
+                                    onChange: this.handleNameChange,
+                                    value: this.state.name
+                                })
+                            ),
+                            _react2.default.createElement(
+                                'label',
+                                { className: 'label' },
+                                'Email'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'control' },
+                                _react2.default.createElement('input', {
+                                    className: 'input',
+                                    type: 'text',
+                                    placeholder: 'Email:',
+                                    onChange: this.handleEmailChange,
+                                    value: this.state.email
+                                })
+                            ),
+                            _react2.default.createElement(
+                                'label',
+                                { className: 'label' },
+                                'Do you like the site?'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'control' },
+                                _react2.default.createElement('textarea', {
+                                    className: 'textarea',
+                                    type: 'text',
+                                    placeholder: 'Shoot me a line! I\'d love to hear from you',
+                                    onChange: this.handleReasonChange,
+                                    value: this.state.reason
+                                })
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'control' },
+                                _react2.default.createElement(
+                                    'button',
+                                    {
+                                        className: 'button send',
+                                        id: 'sendbutton',
+                                        onClick: this.handleSubmit
+                                    },
+                                    'Send'
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Contact;
+}(_react.Component);
+
+exports.default = Contact;
 
 /***/ },
 /* 115 */
@@ -13060,6 +13240,77 @@ var Portfolio = function (_Component) {
                                                             'Technologies used:'
                                                         ),
                                                         ' HTML, CSS, JavaScript, jQuery, AJAX, Behat, BDD, Mink Extension, NPM, Bootstrap'
+                                                    ),
+                                                    _react2.default.createElement(
+                                                        'a',
+                                                        { href: '#', className: 'is-flex github-container' },
+                                                        _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
+                                                        _react2.default.createElement(
+                                                            'span',
+                                                            { className: 'github-span' },
+                                                            'Private Repo'
+                                                        )
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'box portfolio' },
+                            _react2.default.createElement(
+                                'article',
+                                { className: 'media' },
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: 'columns' },
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'column is-5 is-flex image-column' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'media-left is-flex' },
+                                            _react2.default.createElement(
+                                                'figure',
+                                                { className: 'image-container' },
+                                                _react2.default.createElement('img', { src: '/images/portfolio.png', alt: 'Image' })
+                                            )
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'column is-7' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'media-content is-flex media-flex' },
+                                            _react2.default.createElement(
+                                                'div',
+                                                { className: 'content is-flex' },
+                                                _react2.default.createElement(
+                                                    'p',
+                                                    { className: 'project-description' },
+                                                    _react2.default.createElement(
+                                                        'strong',
+                                                        null,
+                                                        'cjsampson.me'
+                                                    ),
+                                                    ' is an application to host the projects that I have both built and been a team member of.  This app exercised my knowledge of React and functional programming to help better understand the core components of React.'
+                                                ),
+                                                _react2.default.createElement(
+                                                    'div',
+                                                    { className: 'project-technologies' },
+                                                    _react2.default.createElement(
+                                                        'p',
+                                                        null,
+                                                        _react2.default.createElement(
+                                                            'strong',
+                                                            null,
+                                                            'Technologies used:'
+                                                        ),
+                                                        ' HTML, CSS, Sass, JavaScript, Bulma, React, NPM, Webpack'
                                                     ),
                                                     _react2.default.createElement(
                                                         'a',
@@ -13669,7 +13920,20 @@ exports.push([module.i, ".main-section {\n  min-height: 80vh;\n  background-colo
 
 
 /***/ },
-/* 124 */,
+/* 124 */
+/***/ function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(19)();
+// imports
+
+
+// module
+exports.push([module.i, "#contact-form {\n  background-color: #ffc66c;\n  border-radius: 5px; }\n\n#sendbutton {\n  background-color: #ffc66c; }\n\n#sendbutton:focus {\n  border-color: black; }\n\n.input:active, .input:focus, .input.is-active,\n.textarea:active, .textarea:focus, .textarea.is-active {\n  border-color: #ffc66c; }\n\n.is-flex-mobile.mail {\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.mail {\n  height: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\nfigure.image.is-128x128 {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.greeting {\n  font-weight: bold; }\n", "", {"version":3,"sources":["/./resources/assets/sass/resources/assets/sass/contact.sass"],"names":[],"mappings":"AAAA;EACI,0BAA0B;EAC1B,mBAAmB,EAAG;;AAE1B;EACI,0BAA0B,EAAG;;AAEjC;EACI,oBAAoB,EAAG;;AAE3B;;EAEI,sBAAsB,EAAG;;AAE7B;EACI,yBAAwB;MAAxB,sBAAwB;UAAxB,wBAAwB;EACxB,0BAAoB;MAApB,uBAAoB;UAApB,oBAAoB,EAAG;;AAE3B;EACI,aAAa;EACb,qBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,yBAAwB;MAAxB,sBAAwB;UAAxB,wBAAwB;EACxB,0BAAoB;MAApB,uBAAoB;UAApB,oBAAoB,EAAG;;AAE3B;EACI,qBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,yBAAwB;MAAxB,sBAAwB;UAAxB,wBAAwB;EACxB,0BAAoB;MAApB,uBAAoB;UAApB,oBAAoB,EAAG;;AAE3B;EACI,kBAAkB,EAAG","file":"contact.sass","sourcesContent":["#contact-form {\n    background-color: #ffc66c;\n    border-radius: 5px; }\n\n#sendbutton {\n    background-color: #ffc66c; }\n\n#sendbutton:focus {\n    border-color: black; }\n\n.input:active, .input:focus, .input.is-active,\n.textarea:active, .textarea:focus, .textarea.is-active {\n    border-color: #ffc66c; }\n\n.is-flex-mobile.mail {\n    justify-content: center;\n    align-items: center; }\n\n.mail {\n    height: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n\nfigure.image.is-128x128 {\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n\n.greeting {\n    font-weight: bold; }\n"],"sourceRoot":"webpack://"}]);
+
+// exports
+
+
+/***/ },
 /* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -28248,7 +28512,32 @@ if(false) {
 }
 
 /***/ },
-/* 252 */,
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(124);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(23)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./contact.sass", function() {
+			var newContent = require("!!./../../../node_modules/css-loader/index.js?sourceMap!./../../../node_modules/postcss-loader/index.js!./../../../node_modules/sass-loader/index.js?sourceMap!./contact.sass");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ },
 /* 253 */
 /***/ function(module, exports, __webpack_require__) {
 

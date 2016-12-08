@@ -178,8 +178,41 @@ export default class Portfolio extends Component {
                             </article>
                         </div>
 
-                    </div>
+                        <div className="box portfolio">
+                            <article className="media">
 
+                                <div className="columns">
+
+                                    <div className="column is-5 is-flex image-column">
+                                        <div className="media-left is-flex">
+                                            <figure className="image-container">
+                                                <img src="/images/portfolio.png" alt="Image" />
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                    <div className="column is-7">
+                                        <div className="media-content is-flex media-flex">
+                                            <div className="content is-flex">
+                                                <p className="project-description">
+                                                    <strong>cjsampson.me</strong> is an application to host the projects that I have both built and been a team member of.  This app exercised my knowledge of React and functional programming to help better understand the core components of React.
+                                                </p>
+                                                
+                                                <div className="project-technologies">
+                                                    <p><strong>Technologies used:</strong> HTML, CSS, Sass, JavaScript, Bulma, React, NPM, Webpack</p>
+                                                    <a href="#" className="is-flex github-container">
+                                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                                        <span className="github-span">Private Repo</span>
+                                                    </a>
+                                                </div>
+                                            </div>                  
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         )
