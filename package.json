@@ -8,6 +8,8 @@
     "build": "webpack --watch"
   },
   "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "autoprefixer-core": "^6.0.1",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.8",
@@ -39,7 +41,7 @@
     "laravel-elixir-webpack": "^1.0.1",
     "mocha": "^3.1.2",
     "nyc": "^10.0.0",
-    "postcss-loader": "^1.1.1",
+    "postcss-loader": "^1.2.0",
     "react-addons-test-utils": "^15.4.1",
     "sass-loader": "^4.0.2",
     "sinon": "^1.17.6",
