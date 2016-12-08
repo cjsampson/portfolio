@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const combineLoaders = require('webpack-combine-loaders');
+var autoprefixer = require('autoprefixer');
 
 
 module.exports = {
@@ -28,15 +29,19 @@ module.exports = {
                },
            },
            {
-               test: /(\.css|\.scss|\.sass)$/,
-               loaders: [
-                   'style-loader',
-                   'css-loader?sourceMap',
-                   'postcss-loader',
-                   'sass-loader?sourceMap',
-               ],
+              test: /(\.css|\.scss|\.sass)$/,
+              loaders: [
+                 'style-loader',
+                 'css-loader?sourceMap',
+                 'postcss-loader',
+                 'sass-loader?sourceMap',
+             ],
            },
-           {test: /\.(jpe?g|png|gif)$/i, loader: 'file?name=[name].[ext]'},
-       ],
-   },
+           {
+              test: /\.(jpe?g|png|gif)$/i,
+              loader: 'file?name=[name].[ext]'
+            },
+        ],
+    },
+    postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ]
 };
