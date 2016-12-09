@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import '../../../sass/portfolio.sass';
 
 export default class Portfolio extends Component {
+
+
     render() {
+        const transitionOptions = {
+            transitionName: "fade",
+            transitionEnterTimeout: 5000,
+            transitionLeaveTimeout: 5000
+        }
+
         return (
             <div className="container">
                 <div className="columns">
