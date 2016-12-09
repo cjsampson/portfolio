@@ -75,7 +75,15 @@ header
     transform: translateX(3px)
     transform: translateY(3px)
 
-@media (max-width: 769px) 
+@media (max-width: 768px) 
+    .nav-menu.is-active
+        background-color: whitesmoke
+        border-bottom: 3px solid black
+    .header-list-item
+        border-bottom: 1px solid $orange
+    .header-list-item:nth-child(3)
+        border-bottom: none
+
     .header-name-link:hover
         color: orange
 
