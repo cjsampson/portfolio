@@ -30,7 +30,7 @@ export default class Portfolio extends Component {
                                                 </p>
                                                 <div className="project-technologies">
                                                     <p><strong>Technologies used:</strong> Laravel Framework, Twitter Bootstrap, AJAX, Datatables, jQuery, Sequel Pro, NPM, Gulp, Vagrant, Ansible</p>
-                                                    <a href="#" className="is-flex github-container">
+                                                    <a className="is-flex github-container private">
                                                         <i className="fa fa-github" aria-hidden="true"></i>
                                                         <span className="github-span">Private Repo</span>
                                                     </a>
@@ -64,7 +64,7 @@ export default class Portfolio extends Component {
 
                                                 <div className="project-technologies">
                                                     <p><strong>Technologies used:</strong> Laravel Framework, SASS (CSS), jQuery, Bulma Framework, NPM, Gulp, Homestead</p>
-                                                    <a href="#" className="is-flex github-container">
+                                                    <a className="is-flex github-container private">
                                                         <i className="fa fa-github" aria-hidden="true"></i>
                                                         <span className="github-span">Private Repo</span>
                                                     </a>
@@ -166,7 +166,7 @@ export default class Portfolio extends Component {
                                                 
                                                 <div className="project-technologies">
                                                     <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, jQuery, AJAX, Behat, BDD, Mink Extension, NPM, Bootstrap</p>
-                                                    <a href="#" className="is-flex github-container">
+                                                    <a className="is-flex github-container private">
                                                         <i className="fa fa-github" aria-hidden="true"></i>
                                                         <span className="github-span">Private Repo</span>
                                                     </a>
