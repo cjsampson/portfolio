@@ -32,7 +32,7 @@ module.exports = {
                loaders: [
                    'style-loader',
                    'css-loader?sourceMap',
-                   'postcss-loader',
+                   'postcss-loader?sourceMap=inline',
                    'sass-loader?sourceMap',
                ],
            },
