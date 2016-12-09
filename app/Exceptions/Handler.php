@@ -46,10 +46,10 @@ class Handler extends ExceptionHandler
     {
         if($this->isHttpException($exception)) {
              switch ($exception->getStatusCode()) {
-                 case 404:
+                 case '404':
                      return redirect()->route('/');
  
-                 case 500:
+                 case '500':
                      return redirect()->route('/');
  
                  default:
