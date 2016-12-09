@@ -200,9 +200,9 @@ export default class Portfolio extends Component {
                                                 
                                                 <div className="project-technologies">
                                                     <p><strong>Technologies used:</strong> HTML, CSS, Sass, JavaScript, Bulma, React, NPM, Webpack</p>
-                                                    <a href="#" className="is-flex github-container">
+                                                    <a href="https://github.com/cjsampson/portfolio" className="is-flex github-container">
                                                         <i className="fa fa-github" aria-hidden="true"></i>
-                                                        <span className="github-span">Private Repo</span>
+                                                        <span className="github-span">Github</span>
                                                     </a>
                                                 </div>
                                             </div>                  

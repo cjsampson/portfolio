@@ -14,14 +14,21 @@ $orange: #FF851B
     padding: 10px
     margin-left: 10px
 
+
 .box
      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
      transition: all 0.3s cubic-bezier(.25,.8,.25,1)
 
+.image-container img
+    transition: all 0.19s linear
+    transform: scale3d(1, 1, 1)
+
 .box:hover
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+    .image-container img
+        transform: scale3d(1.05 ,1.05 ,1)
 
-.media-content.is-flex.media-flex
+.media-content.is-flex-mobile.media-flex
     flex-direction: column
     justify-content: space-between
     align-content: center
@@ -81,7 +88,3 @@ span.github-span
 
 div.section.main-section
     background-color: whitesmoke
-
-@media (max-width: 500)
-    .box.portfolio
-        min-height: 500px

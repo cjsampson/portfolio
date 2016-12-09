@@ -15,7 +15,7 @@ export default class About extends Component {
                         </div>
                         <div className="column is-4 content-container">
                             <div className="content">
-                                <h1 className="about-heading has-text-centered">A little About CJ?</h1>
+                                <h1 className="about-heading has-text-centered">A Little About CJ?</h1>
                                 <p>My name is CJ Sampson and I am a software developer from Navarre Beach, Florida. Debugging complex problems related to anything programming or web is a great feeling.  Seeing software develop through the phases of nothing to production is one of the best feelings imaginable!</p>
                                 <p>All things web/programming draw my interest being that I enjoy working on complex, logical problems.</p>
 
