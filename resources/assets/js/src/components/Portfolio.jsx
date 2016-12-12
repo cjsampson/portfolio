@@ -34,6 +34,8 @@ const Portfolio = () => (
 
                                                     <a href={project.link ? "https://github.com/thesweetyams/sweetyams" : "javascript:;" }
                                                         className={project.link ? "is-flex github-container" : "is-flex github-container private"}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
                                                     >
                                                         <i className="fa fa-github" aria-hidden="true"></i>
                                                         <span className="github-span">{project.status}</span>
@@ -53,18 +55,3 @@ const Portfolio = () => (
 )
 
 export default Portfolio;
-
-{/*
-// {groceryData.map(item =>
-//     <li key={item.id}>
-//         <img src={item.image} />
-//         {item.item}
-//     </li>                        
-// )}
-   image: "/images/bl.png",
-    imageAlt: "Blueline Screening Picture",
-    project: "Blueline Screening Source",
-    description: "Blueline Screening Source is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.",
-    technologies: "Laravel Framework, Twitter Bootstrap, AJAX, Datatables, jQuery, Sequel Pro, NPM, Gulp, Vagrant, Ansible",
-    status: "Private Repo"
-*/}
