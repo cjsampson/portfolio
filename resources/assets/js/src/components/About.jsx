@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import '../../../sass/about.sass';
 
 // implicit return
-const About = () => (
+const About = (props) => (
     <div className="hero-body">
         <div className="container">
             <div className="columns column-row">
@@ -29,4 +29,4 @@ const About = () => (
     </div>
 )
 
-export default About
+export default About;

@@ -14468,7 +14468,7 @@ __webpack_require__(263);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // implicit return
-var About = function About() {
+var About = function About(props) {
     return _react2.default.createElement(
         'div',
         { className: 'hero-body' },
@@ -14854,9 +14854,6 @@ exports.default = NotFound;
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(5);
 
@@ -14866,462 +14863,88 @@ var _reactAddonsCssTransitionGroup = __webpack_require__(163);
 
 var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
+var _portfolio = __webpack_require__(271);
+
+var _portfolio2 = _interopRequireDefault(_portfolio);
+
 __webpack_require__(268);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+console.log(_portfolio2.default);
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Portfolio = function (_Component) {
-    _inherits(Portfolio, _Component);
-
-    function Portfolio() {
-        _classCallCheck(this, Portfolio);
-
-        return _possibleConstructorReturn(this, (Portfolio.__proto__ || Object.getPrototypeOf(Portfolio)).apply(this, arguments));
-    }
-
-    _createClass(Portfolio, [{
-        key: 'render',
-        value: function render() {
-            var transitionOptions = {
-                transitionName: "fade",
-                transitionEnterTimeout: 5000,
-                transitionLeaveTimeout: 5000
-            };
-
-            return _react2.default.createElement(
+var Portfolio = function Portfolio() {
+    return _react2.default.createElement(
+        'div',
+        { className: 'container' },
+        _react2.default.createElement(
+            'div',
+            { className: 'columns' },
+            _react2.default.createElement(
                 'div',
-                { className: 'container' },
+                { className: 'column is-two-thirds is-offset-2' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'columns' },
+                    { className: 'box portfolio' },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'column is-two-thirds is-offset-2' },
+                        'article',
+                        { className: 'media' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'box portfolio' },
+                            { className: 'columns' },
                             _react2.default.createElement(
-                                'article',
-                                { className: 'media' },
+                                'div',
+                                { className: 'column is-5 is-flex image-column' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'columns' },
+                                    { className: 'media-left is-flex' },
                                     _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-5 is-flex image-column' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-left is-flex' },
-                                            _react2.default.createElement(
-                                                'figure',
-                                                { className: 'image-container' },
-                                                _react2.default.createElement('img', { src: '/images/bl.png', alt: 'Image' })
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-7' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-content is-flex-mobile media-flex' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'content is-flex' },
-                                                _react2.default.createElement(
-                                                    'p',
-                                                    { className: 'project-description' },
-                                                    _react2.default.createElement(
-                                                        'strong',
-                                                        null,
-                                                        'Blueline Screening Source'
-                                                    ),
-                                                    ' is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.'
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'project-technologies' },
-                                                    _react2.default.createElement(
-                                                        'p',
-                                                        null,
-                                                        _react2.default.createElement(
-                                                            'strong',
-                                                            null,
-                                                            'Technologies used:'
-                                                        ),
-                                                        ' Laravel Framework, Twitter Bootstrap, AJAX, Datatables, jQuery, Sequel Pro, NPM, Gulp, Vagrant, Ansible'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { className: 'is-flex github-container private' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'github-span' },
-                                                            'Private Repo'
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
+                                        'figure',
+                                        { className: 'image-container' },
+                                        _react2.default.createElement('img', { src: '/images/bl.png', alt: 'Image' })
                                     )
                                 )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'box portfolio' },
+                            ),
                             _react2.default.createElement(
-                                'article',
-                                { className: 'media' },
+                                'div',
+                                { className: 'column is-7' },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: 'columns' },
+                                    { className: 'media-content is-flex-mobile media-flex' },
                                     _react2.default.createElement(
                                         'div',
-                                        { className: 'column is-5 is-flex image-column' },
+                                        { className: 'content is-flex' },
+                                        _react2.default.createElement(
+                                            'p',
+                                            { className: 'project-description' },
+                                            _react2.default.createElement(
+                                                'strong',
+                                                null,
+                                                'Blueline Screening Source'
+                                            ),
+                                            ' is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.'
+                                        ),
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'media-left is-flex' },
+                                            { className: 'project-technologies' },
                                             _react2.default.createElement(
-                                                'figure',
-                                                { className: 'image-container' },
-                                                _react2.default.createElement('img', { src: '/images/tandc.png', alt: 'Image' })
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-7' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-content is-flex-mobile media-flex' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'content is-flex' },
+                                                'p',
+                                                null,
                                                 _react2.default.createElement(
-                                                    'p',
-                                                    { className: 'project-description' },
-                                                    _react2.default.createElement(
-                                                        'strong',
-                                                        null,
-                                                        'TandC'
-                                                    ),
-                                                    ' is an application that has all sorts of resources from videos to articles all co-created by yours truely.  TandC uses Laravel for the backend while utilizing the Bulma CSS framework for layout/templating, jQuery for DOM maniputaion and user interaction, and many more open-source libraries.'
+                                                    'strong',
+                                                    null,
+                                                    'Technologies used:'
                                                 ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'project-technologies' },
-                                                    _react2.default.createElement(
-                                                        'p',
-                                                        null,
-                                                        _react2.default.createElement(
-                                                            'strong',
-                                                            null,
-                                                            'Technologies used:'
-                                                        ),
-                                                        ' Laravel Framework, SASS (CSS), jQuery, Bulma Framework, NPM, Gulp, Homestead'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { className: 'is-flex github-container private' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'github-span' },
-                                                            'Private Repo'
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'box portfolio' },
-                            _react2.default.createElement(
-                                'article',
-                                { className: 'media' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'columns' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-5 is-flex image-column' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-left is-flex' },
+                                                ' Laravel Framework, Twitter Bootstrap, AJAX, Datatables, jQuery, Sequel Pro, NPM, Gulp, Vagrant, Ansible'
+                                            ),
                                             _react2.default.createElement(
-                                                'figure',
-                                                { className: 'image-container' },
-                                                _react2.default.createElement('img', { src: '/images/sweetyams.png', alt: 'Image' })
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-7' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-content is-flex-mobile media-flex' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'content is-flex' },
+                                                'a',
+                                                { className: 'is-flex github-container private' },
+                                                _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
                                                 _react2.default.createElement(
-                                                    'p',
-                                                    { className: 'project-description' },
-                                                    _react2.default.createElement(
-                                                        'strong',
-                                                        null,
-                                                        'Sweet Yams'
-                                                    ),
-                                                    ' was a project that I was a part of for a local, organic restaurant.  The application had a CRUD build for the restaurant owners to update the menu.  Another big feature built for the application was the menu and ordering system.'
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'project-technologies' },
-                                                    _react2.default.createElement(
-                                                        'p',
-                                                        null,
-                                                        _react2.default.createElement(
-                                                            'strong',
-                                                            null,
-                                                            'Technologies used:'
-                                                        ),
-                                                        ' Laravel Framework, Twitter Bootstrap, jQuery, Custom Flexbox, Vue.js, NPM, Gulp, Bower, Browsersync'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'https://github.com/thesweetyams/sweetyams', className: 'is-flex github-container' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'github-span' },
-                                                            'Github'
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'box portfolio' },
-                            _react2.default.createElement(
-                                'article',
-                                { className: 'media' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'columns' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-5 is-flex image-column' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-left is-flex' },
-                                            _react2.default.createElement(
-                                                'figure',
-                                                { className: 'image-container' },
-                                                _react2.default.createElement('img', { src: '/images/wackamole.png', alt: 'Image' })
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-7' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-content is-flex-mobile media-flex' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'content is-flex' },
-                                                _react2.default.createElement(
-                                                    'p',
-                                                    { className: 'project-description' },
-                                                    _react2.default.createElement(
-                                                        'strong',
-                                                        null,
-                                                        'Whack-a-mole'
-                                                    ),
-                                                    ' is a fun jQuery focused web game that has a basic score counter and random images that pop up on click.'
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'project-technologies' },
-                                                    _react2.default.createElement(
-                                                        'p',
-                                                        null,
-                                                        _react2.default.createElement(
-                                                            'strong',
-                                                            null,
-                                                            'Technologies used:'
-                                                        ),
-                                                        ' HTML, CSS, JavaScript, jQuery'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'https://github.com/cjsampson/Whack-a-Mole', className: 'is-flex github-container' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'github-span' },
-                                                            'Github'
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'box portfolio' },
-                            _react2.default.createElement(
-                                'article',
-                                { className: 'media' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'columns' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-5 is-flex image-column' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-left is-flex' },
-                                            _react2.default.createElement(
-                                                'figure',
-                                                { className: 'image-container' },
-                                                _react2.default.createElement('img', { src: '/images/paramount.png', alt: 'Image' })
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-7' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-content is-flex-mobile media-flex' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'content is-flex' },
-                                                _react2.default.createElement(
-                                                    'p',
-                                                    { className: 'project-description' },
-                                                    _react2.default.createElement(
-                                                        'strong',
-                                                        null,
-                                                        'Paramount Accounting'
-                                                    ),
-                                                    ' is an accounting software to provide efficiency to a local Taxing business.  Roles performed for this project were to implement BDD using the Selenium Driver and Behat to provide Behavioral test in the browser.  Also a user-restriction feature was implemented to restrict user\'s from accesing certain features of the software.'
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'project-technologies' },
-                                                    _react2.default.createElement(
-                                                        'p',
-                                                        null,
-                                                        _react2.default.createElement(
-                                                            'strong',
-                                                            null,
-                                                            'Technologies used:'
-                                                        ),
-                                                        ' HTML, CSS, JavaScript, jQuery, AJAX, Behat, BDD, Mink Extension, NPM, Bootstrap'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { className: 'is-flex github-container private' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'github-span' },
-                                                            'Private Repo'
-                                                        )
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    )
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'box portfolio' },
-                            _react2.default.createElement(
-                                'article',
-                                { className: 'media' },
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: 'columns' },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-5 is-flex image-column' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-left is-flex' },
-                                            _react2.default.createElement(
-                                                'figure',
-                                                { className: 'image-container' },
-                                                _react2.default.createElement('img', { src: '/images/portfolio.png', alt: 'Image' })
-                                            )
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: 'column is-7' },
-                                        _react2.default.createElement(
-                                            'div',
-                                            { className: 'media-content is-flex-mobile media-flex' },
-                                            _react2.default.createElement(
-                                                'div',
-                                                { className: 'content is-flex' },
-                                                _react2.default.createElement(
-                                                    'p',
-                                                    { className: 'project-description' },
-                                                    _react2.default.createElement(
-                                                        'strong',
-                                                        null,
-                                                        'cjsampson.me'
-                                                    ),
-                                                    ' is an application to host the projects that I have both built and been a team member of.  This app exercised my knowledge of React and functional programming to help better understand the core components of React.'
-                                                ),
-                                                _react2.default.createElement(
-                                                    'div',
-                                                    { className: 'project-technologies' },
-                                                    _react2.default.createElement(
-                                                        'p',
-                                                        null,
-                                                        _react2.default.createElement(
-                                                            'strong',
-                                                            null,
-                                                            'Technologies used:'
-                                                        ),
-                                                        ' HTML, CSS, Sass, JavaScript, Bulma, React, NPM, Webpack'
-                                                    ),
-                                                    _react2.default.createElement(
-                                                        'a',
-                                                        { href: 'https://github.com/cjsampson/portfolio', className: 'is-flex github-container' },
-                                                        _react2.default.createElement('i', { className: 'fa fa-github', 'aria-hidden': 'true' }),
-                                                        _react2.default.createElement(
-                                                            'span',
-                                                            { className: 'github-span' },
-                                                            'Github'
-                                                        )
-                                                    )
+                                                    'span',
+                                                    { className: 'github-span' },
+                                                    'Private Repo'
                                                 )
                                             )
                                         )
@@ -15331,12 +14954,10 @@ var Portfolio = function (_Component) {
                         )
                     )
                 )
-            );
-        }
-    }]);
-
-    return Portfolio;
-}(_react.Component);
+            )
+        )
+    );
+};
 
 exports.default = Portfolio;
 
@@ -15557,8 +15178,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
@@ -15567,117 +15186,96 @@ __webpack_require__(266);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Footer = function (_Component) {
-    _inherits(Footer, _Component);
-
-    function Footer() {
-        _classCallCheck(this, Footer);
-
-        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-    }
-
-    _createClass(Footer, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'section',
-                { className: 'hero is-orange is-bold footer' },
+var Footer = function Footer() {
+    return _react2.default.createElement(
+        'section',
+        { className: 'hero is-orange is-bold footer' },
+        _react2.default.createElement(
+            'div',
+            { className: 'hero-body' },
+            _react2.default.createElement(
+                'div',
+                { className: 'container' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'hero-body' },
+                    { className: 'columns' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'container' },
+                        { className: 'column columnSelect' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'columns' },
+                            { className: 'icon-container is-flex' },
                             _react2.default.createElement(
-                                'div',
-                                { className: 'column columnSelect' },
+                                'a',
+                                { className: 'footer-social is-flex contact', href: '/contact' },
                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'icon-container is-flex' },
-                                    _react2.default.createElement(
-                                        'a',
-                                        { className: 'footer-social is-flex contact', href: '/contact' },
-                                        _react2.default.createElement(
-                                            'span',
-                                            { className: 'social-footer-span' },
-                                            'Contact'
-                                        ),
-                                        _react2.default.createElement('i', { className: 'fa fa-envelope fa-lg', 'aria-hidden': 'true' })
-                                    )
-                                )
-                            ),
+                                    'span',
+                                    { className: 'social-footer-span' },
+                                    'Contact'
+                                ),
+                                _react2.default.createElement('i', { className: 'fa fa-envelope fa-lg', 'aria-hidden': 'true' })
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'column columnSelect' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'icon-container is-flex' },
                             _react2.default.createElement(
-                                'div',
-                                { className: 'column columnSelect' },
+                                'a',
+                                { className: 'footer-social is-flex twitter', href: 'https://twitter.com/CJSampsonite' },
                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'icon-container is-flex' },
-                                    _react2.default.createElement(
-                                        'a',
-                                        { className: 'footer-social is-flex twitter', href: 'https://twitter.com/CJSampsonite' },
-                                        _react2.default.createElement(
-                                            'span',
-                                            { className: 'social-footer-span' },
-                                            'Twitter'
-                                        ),
-                                        _react2.default.createElement('i', { className: 'fa fa-twitter-square fa-lg', 'aria-hidden': 'true' })
-                                    )
-                                )
-                            ),
+                                    'span',
+                                    { className: 'social-footer-span' },
+                                    'Twitter'
+                                ),
+                                _react2.default.createElement('i', { className: 'fa fa-twitter-square fa-lg', 'aria-hidden': 'true' })
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'column columnSelect' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'icon-container is-flex' },
                             _react2.default.createElement(
-                                'div',
-                                { className: 'column columnSelect' },
+                                'a',
+                                { className: 'footer-social is-flex github', href: 'https://github.com/cjsampson' },
                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'icon-container is-flex' },
-                                    _react2.default.createElement(
-                                        'a',
-                                        { className: 'footer-social is-flex github', href: 'https://github.com/cjsampson' },
-                                        _react2.default.createElement(
-                                            'span',
-                                            { className: 'social-footer-span' },
-                                            'Github'
-                                        ),
-                                        _react2.default.createElement('i', { className: 'fa fa-github-square fa-lg', 'aria-hidden': 'true' })
-                                    )
-                                )
-                            ),
+                                    'span',
+                                    { className: 'social-footer-span' },
+                                    'Github'
+                                ),
+                                _react2.default.createElement('i', { className: 'fa fa-github-square fa-lg', 'aria-hidden': 'true' })
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'column columnSelect' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'icon-container is-flex' },
                             _react2.default.createElement(
-                                'div',
-                                { className: 'column columnSelect' },
+                                'a',
+                                { className: 'footer-social is-flex linkedin', href: 'https://www.linkedin.com/in/christopher-sampson-3891b7b7' },
                                 _react2.default.createElement(
-                                    'div',
-                                    { className: 'icon-container is-flex' },
-                                    _react2.default.createElement(
-                                        'a',
-                                        { className: 'footer-social is-flex linkedin', href: 'https://www.linkedin.com/in/christopher-sampson-3891b7b7' },
-                                        _react2.default.createElement(
-                                            'span',
-                                            { className: 'social-footer-span' },
-                                            'LinkedIn'
-                                        ),
-                                        _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-lg', 'aria-hidden': 'true' })
-                                    )
-                                )
+                                    'span',
+                                    { className: 'social-footer-span' },
+                                    'LinkedIn'
+                                ),
+                                _react2.default.createElement('i', { className: 'fa fa-linkedin-square fa-lg', 'aria-hidden': 'true' })
                             )
                         )
                     )
                 )
-            );
-        }
-    }]);
-
-    return Footer;
-}(_react.Component);
+            )
+        )
+    );
+};
 
 exports.default = Footer;
 
@@ -30837,6 +30435,62 @@ var Index = function Index() {
 };
 
 _reactDom2.default.render(_react2.default.createElement(Index, null), document.getElementById('app'));
+
+/***/ },
+/* 271 */
+/***/ function(module, exports) {
+
+"use strict";
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var portfolioData = [{
+    image: "/images/bl.png",
+    imageAlt: "Blueline Screening Picture",
+    project: "Blueline Screening Source",
+    description: "Blueline Screening Source is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.",
+    technologies: "Laravel Framework, Twitter Bootstrap, AJAX, Datatables, jQuery, Sequel Pro, NPM, Gulp, Vagrant, Ansible",
+    status: "Private Repo"
+}, {
+    image: "/images/tandc.png",
+    imageAlt: "TandC Application Picture",
+    project: "TandC",
+    description: "TandC is an application that has all sorts of resources from videos to articles all co-created by yours truely.  TandC uses Laravel for the backend while utilizing the Bulma CSS framework for layout/templating, jQuery for DOM maniputaion and user interaction, and many more open-source libraries.",
+    technologies: "Laravel Framework, SASS (CSS), jQuery, Bulma Framework, NPM, Gulp, Homestead",
+    status: "Private Repo"
+}, {
+    image: "/images/sweetyams.png",
+    imageAlt: "Sweet Yams Picture",
+    project: "Sweet Yams",
+    description: "Description was a project that I was a part of for a local, organic restaurant.  The application had a CRUD build for the restaurant owners to update the menu.  Another big feature built for the application was the menu and ordering system.",
+    technologies: "Laravel Framework, Twitter Bootstrap, jQuery, Custom Flexbox, Vue.js, NPM, Gulp, Bower, Browsersync",
+    status: "Github"
+}, {
+    image: "/images/wackamole.png",
+    imageAlt: "Wackamole Picture",
+    project: "Whack-a-mole",
+    description: "is a fun jQuery focused web game that has a basic score counter and random images that pop up on click.",
+    technologies: "HTML, CSS, JavaScript, jQuery",
+    status: "Github"
+}, {
+    image: "/images/paramount.png",
+    imageAlt: "Parmount Accounting Picture",
+    project: "Paramount Accounting",
+    description: "is an accounting software to provide efficiency to a local Taxing business.  Roles performed for this project were to implement BDD using the Selenium Driver and Behat to provide Behavioral test in the browser.  Also a user-restriction feature was implemented to restrict user's from accesing certain features of the software.",
+    technologies: "HTML, CSS, JavaScript, jQuery, AJAX, Behat, BDD, Mink Extension, NPM, Bootstrap",
+    status: "Private Repo"
+}, {
+    image: "/images/portfolio.png",
+    imageAlt: "cjsampson.me Picture",
+    project: "cjsampson.me",
+    description: "is an application to host the projects that I have both built and been a team member of.  This app exercised my knowledge of React and functional programming to help better understand the core components of React.",
+    technologies: "HTML, CSS, Sass, JavaScript, Bulma, React, NPM, Webpack",
+    status: "Private Repo"
+}];
+
+exports.default = portfolioData;
 
 /***/ }
 /******/ ]);

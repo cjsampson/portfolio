@@ -1,4 +1,4 @@
-[
+const portfolioData = [
     {
         image: "/images/bl.png",
         imageAlt: "Blueline Screening Picture",
@@ -42,9 +42,11 @@
     {
         image: "/images/portfolio.png",
         imageAlt: "cjsampson.me Picture",
-        project: "cjsampson.me" 
+        project: "cjsampson.me" ,
         description: "is an application to host the projects that I have both built and been a team member of.  This app exercised my knowledge of React and functional programming to help better understand the core components of React.",
         technologies: "HTML, CSS, Sass, JavaScript, Bulma, React, NPM, Webpack",
         status: "Private Repo",
     }
 ]
+
+export default portfolioData;
