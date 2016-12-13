@@ -4,7 +4,6 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import data from '../data/portfolio';
 import '../../../sass/portfolio.sass';
 
-console.log(data)
 
 const Portfolio = () => (
     <div className="container">
@@ -24,14 +23,13 @@ const Portfolio = () => (
                                 </div>
 
                                 <div className="column is-7">
-                                    <div className="media-content is-flex-mobile media-flex">
+                                    <div className="media-content is-flex media-flex">
                                         <div className="content is-flex">
                                             <p className="project-description">
                                                 <strong>{project.project}</strong> {project.description}
                                             </p>
                                             <div className="project-technologies">
                                                 <p><strong>Technologies used:</strong> {project.technologies}</p>
-
                                                     <a href={project.link ? "https://github.com/thesweetyams/sweetyams" : "javascript:;" }
                                                         className={project.link ? "is-flex github-container" : "is-flex github-container private"}
                                                         target="_blank"
