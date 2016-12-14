@@ -14940,7 +14940,7 @@ var Portfolio = function Portfolio() {
                                                 ),
                                                 _react2.default.createElement(
                                                     'a',
-                                                    { href: project.link ? "https://github.com/thesweetyams/sweetyams" : "javascript:;",
+                                                    { href: project.link ? project.link : "javascript:;",
                                                         className: project.link ? "is-flex github-container" : "is-flex github-container private",
                                                         target: '_blank',
                                                         rel: 'noopener noreferrer'

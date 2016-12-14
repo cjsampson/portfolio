@@ -30,7 +30,7 @@ const Portfolio = () => (
                                             </p>
                                             <div className="project-technologies">
                                                 <p><strong>Technologies used:</strong> {project.technologies}</p>
-                                                    <a href={project.link ? "https://github.com/thesweetyams/sweetyams" : "javascript:;" }
+                                                    <a href={project.link ? project.link : "javascript:;" }
                                                         className={project.link ? "is-flex github-container" : "is-flex github-container private"}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
