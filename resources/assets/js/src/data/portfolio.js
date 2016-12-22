@@ -14,8 +14,8 @@ const portfolioData = [
         project: "TandC",
         description: "TandC is an application that has all sorts of resources from videos to articles all co-created by yours truely.  TandC uses Laravel for the backend while utilizing the Bulma CSS framework for layout/templating, jQuery for DOM maniputaion and user interaction, and many more open-source libraries.",
         technologies: "Laravel Framework, SASS (CSS), jQuery, Bulma Framework, NPM, Gulp, Homestead",
-        status: "Private Repo",
-        link: null,
+        status: "Github",
+        link: "https://github.com/cjsampson/tandc",
     },
     {
         image: "/images/sweetyams.png",
