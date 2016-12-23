@@ -1,12 +1,12 @@
 const portfolioData = [
     {
-        image: "/images/bl.png",
-        imageAlt: "Blueline Screening Picture",
-        project: "Blueline Screening Source",
-        description: "Blueline Screening Source is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.",
-        technologies: "Laravel Framework, Twitter Bootstrap, AJAX, Datatables, jQuery, Sequel Pro, NPM, Gulp, Vagrant, Ansible",
-        status: "Private Repo",
-        link: null,
+        image: "/images/sweetyams.png",
+        imageAlt: "Sweet Yams Picture",
+        project: "Sweet Yams",
+        description: "is a project that I was a part of for a local, organic restaurant.  The application had a CRUD built for the restaurant owners to update the menu.  Another big feature built for the application was the menu and ordering system.",
+        technologies: "Laravel Framework, Twitter Bootstrap, jQuery, Custom Flexbox, Vue.js, NPM, Gulp, Bower, Browsersync",
+        status: "Github",
+        link: "https://github.com/thesweetyams/sweetyams",
     },
     {
         image: "/images/tandc.png", 
@@ -18,15 +18,6 @@ const portfolioData = [
         link: "https://github.com/cjsampson/tandc",
     },
     {
-        image: "/images/sweetyams.png",
-        imageAlt: "Sweet Yams Picture",
-        project: "Sweet Yams",
-        description: "Description was a project that I was a part of for a local, organic restaurant.  The application had a CRUD build for the restaurant owners to update the menu.  Another big feature built for the application was the menu and ordering system.",
-        technologies: "Laravel Framework, Twitter Bootstrap, jQuery, Custom Flexbox, Vue.js, NPM, Gulp, Bower, Browsersync",
-        status: "Github",
-        link: "https://github.com/thesweetyams/sweetyams",
-    },
-    {
         image: "/images/wackamole.png",
         imageAlt: "Wackamole Picture",
         project: "Whack-a-mole",
@@ -34,6 +25,15 @@ const portfolioData = [
         technologies: "HTML, CSS, JavaScript, jQuery",
         status: "Github",
         link: "https://github.com/cjsampson/Whack-a-Mole",
+    },
+    {
+        image: "/images/portfolio.png",
+        imageAlt: "cjsampson.me Picture",
+        project: "cjsampson.me" ,
+        description: "is an application to host the projects that I have both built and been a team member of.  This app exercised my knowledge of React and functional programming to help better understand the core components of React.",
+        technologies: "HTML, CSS, Sass, JavaScript, Bulma, React, NPM, Webpack",
+        status: "Github",
+        link: "https://github.com/cjsampson/portfolio",
     },
     {
         image: "/images/paramount.png",
@@ -45,13 +45,22 @@ const portfolioData = [
         link: null,
     },
     {
-        image: "/images/portfolio.png",
-        imageAlt: "cjsampson.me Picture",
-        project: "cjsampson.me" ,
-        description: "is an application to host the projects that I have both built and been a team member of.  This app exercised my knowledge of React and functional programming to help better understand the core components of React.",
-        technologies: "HTML, CSS, Sass, JavaScript, Bulma, React, NPM, Webpack",
-        status: "Github",
-        link: "https://github.com/cjsampson/portfolio",
+        image: "/images/volunteer.png",
+        imageAlt: "Volunteer Verify Picuture",
+        project: "Volunteer Verify",
+        description: "is a background screening application that hooks in to a third party API.  jQuery Datatables were used to templating the API data on the frontend with some custom CSS and Bootstrap templating.",
+        technologies: "Laravel Framework, Twitter Bootstrap, AJAX, Vagrant, jQuery, NPM, Gulp, Bower",
+        status: "Private Repo",
+        link: null,
+    },
+    {
+        image: "/images/bl.png",
+        imageAlt: "Blueline Screening Picture",
+        project: "Blueline Screening Source",
+        description: "Blueline Screening Source is a large, enterprise drug testing software.  I was tasked with building a user-based role system for the admin and client portals for access restriction.  The software had a complex backend with a large amount of sql tables.",
+        technologies: "Laravel Framework, Twitter Bootstrap, AJAX, Datatables, jQuery, Sequel Pro, NPM, Gulp, Vagrant, Ansible",
+        status: "Private Repo",
+        link: null,
     }
 ]
 
